@@ -10,71 +10,67 @@ html {
   font-family: "Lato", sans-serif;
 }
 .carousel-item .img1 {
-  /* width: 70%; */
   height: 100vh;
   background-image: linear-gradient(to top, #00000013, #00000000),
     url("../images/gallery_img_4.jpg");
-  /* position: relative; */
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
 
   color: white;
 }
 .carousel-item .img2 {
-  /* width: 70%; */
   height: 100vh;
   background-image: linear-gradient(to top, #00000042, #00000076),
     url("../images/food_donation.jpg");
-  /* position: relative; */
+
   background-position: center;
 
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+
   background-size: cover;
   color: white;
 }
 .carousel-item .img3 {
-  /* width: 70%; */
   height: 100vh;
   background-image: linear-gradient(to top, #0000007c, #000000d3),
     url("../images/blood_donation.jpg");
-  /* position: relative; */
+
   background-position: center;
 
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+
   background-size: cover;
   color: white;
 }
 .carousel-item .img4 {
-  /* width: 70%; */
   height: 100vh;
   background-image: linear-gradient(to top, #0000007c, #000000d3),
     url("../images/sanitry_donation.jpg");
-  /* position: relative; */
+
   background-position: center;
 
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+
   background-size: cover;
   color: white;
 }
 .carousel-item .img5 {
-  /* width: 70%; */
   height: 100vh;
   background-image: linear-gradient(to top, #0000007c, #000000d3),
     url("../images/bacche.jpg");
-  /* position: relative; */
+
   background-position: center;
 
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+
   background-size: cover;
   color: white;
 }
-
+.home-carousel .owl-theme {
+  width: 100% !important;
+}
 .carousel-indicators button {
   width: 15px !important;
   height: 15px !important;
@@ -437,7 +433,7 @@ html {
   margin-bottom: 25px;
 }
 
-.heading_contact .text-dark{
+.heading_contact .text-dark {
   text-align: justify;
 }
 .heading_contact h1 {
@@ -509,7 +505,7 @@ html {
   text-align: center;
   display: flex;
   width: 20%;
-  padding:5px 20px;
+  padding: 5px 20px;
   justify-content: flex-start;
   align-items: center;
 }
@@ -546,14 +542,14 @@ html {
   text-decoration: none;
   color: white;
 
-  margin:0px 10px;
-}.debugged  {
- 
-  display:flex;
+  margin: 0px 10px;
+}
+.debugged {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.debugged .debugged_img{
+.debugged .debugged_img {
   height: 30px;
 }
 .logo {
@@ -765,9 +761,10 @@ footer .line {
 }
 .main_Feature ul {
   margin: 0px;
-  
+
   padding: 0;
-}.main_Feature ul li a {
+}
+.main_Feature ul li a {
   text-decoration: none;
   color: #bdbead;
 }
@@ -949,6 +946,7 @@ figure {
   }
   .footer_2 .for_mobile_view {
     width: 100%;
+    flex-direction: column;
   }
   .footer_2 .be_the_first {
     width: 100%;
@@ -991,26 +989,28 @@ figure {
   }
   .join_us {
     flex-direction: column;
+    align-items: center;
   }
   .caruosel_for_merchandise {
     width: 90%;
   }
-  .join_us  .content {
-    width: 90%;
-    
+  .join_us .content {
+    width: 100vw;
+  }
+  .join_us .content .text-uppercase {
+    margin: 0 !important;
   }
   .join_us .button {
     justify-content: center;
     display: flex;
-
   }
-  .map {
+  /* .map {
     flex-direction: column-reverse;
     justify-content: space-between;
   }
   .map_img {
     width: 100%;
-  }
+  } */
   .brands_working_with {
     margin: 0px !important;
   }
@@ -1080,8 +1080,41 @@ figure {
 
   .my_account ul {
     padding-left: 5px;
-  }
+    display: flex;
+    flex-direction: column;
 
+    list-style-type: none;
+  }
+  .my_account ul li {
+    text-align: center;
+    font-size: small;
+    padding: 0;
+    margin: 5px;
+  }
+  .main_Feature ul {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+
+    list-style-type: none;
+  }
+  .main_Feature ul li {
+    text-align: center;
+    font-size: small;
+    padding: 0;
+    margin: 5px;
+  }
+  .credit {
+    margin: 5px;
+    flex-direction: column !important;
+}
+.cards_image {
+
+  width: 100%;
+
+  justify-content: center;
+
+}
   .contact_us_form .button {
     display: flex;
     justify-content: center;
@@ -1100,6 +1133,9 @@ figure {
     padding: 5px;
     width: 100%;
     text-align: justify;
+  }
+  .contactus_footer footer {
+    width: 100%;
   }
 }
 

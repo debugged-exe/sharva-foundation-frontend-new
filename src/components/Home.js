@@ -61,7 +61,7 @@ const Home = () => {
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
-      </div>
+      </div> */}
     
       <div
         id="carouselExampleInterval"
@@ -153,13 +153,13 @@ const Home = () => {
           ></span>
           <span className="visually-hidden">Next</span>
         </button>
-      </div> */}
-      <OwlCarousel
-          className="carousel-inner "
-         
+      </div>
+      {/* <OwlCarousel
+          className="carousel-inner home-carousel "
+         items={1}
           loop
           autoPlay="true"
-          margin={5}
+          margin={0}
         >
           <div
             className="carousel-item active img-gradient"
@@ -219,7 +219,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-        </OwlCarousel>
+        </OwlCarousel> */}
       </div>
       <Count />
       <DonationCard />

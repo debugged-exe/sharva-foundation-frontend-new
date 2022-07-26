@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from "react";
 import sharva_logo from "./images/sharva-logo.png";
-import sharva_full from "./images/sharva-full.png";
+
 import './CSS/navbar.css'
 import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -11,6 +11,7 @@ const Navbar = () => {
   const listenScrollEvent = () => {
     window.scrollY > 20 ? setnavColor("#fefefe") : setnavColor("transparent");
     window.scrollY > 20 ? settextColor("#151515") : settextColor("#fefefe");
+    window.scrollY > 20 ? setShadow("shadow-lg") : setShadow("");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -26,9 +27,9 @@ const Navbar = () => {
           transition: "all 0.5s",
           color:textColor 
         }}
-        className="Header shadow-lg  navbar top navbar-expand-lg "   >
+        className={`Header ${shadow}  navbar top navbar-expand-lg ` }  >
         <div  className="container-fluid ">
-        <Link to="/">
+        <Link to="/" >
 
           <img src={sharva_logo} className='mx-3 sharva-logo' width = '80px' alt="" />
         </Link>
@@ -43,7 +44,7 @@ const Navbar = () => {
           >
             <span  className="navbar-toggler-icon"></span>
           </button>
-          <div  className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div  className="collapse rounded navbar-collapse" id="navbarSupportedContent">
             <ul  className="navbar-nav  mb-lg-0">
               <li  className="nav-item dropdown">
           <a  className="nav-link  dropdown-toggle" href="/" id="navbarDropdown" style={{

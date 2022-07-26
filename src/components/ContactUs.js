@@ -2,6 +2,7 @@ import React,{useEffect} from 'react'
 import './CSS/contactus.css'
 const ContactUs = () => {
   useEffect(() => {
+    
     window.scrollTo(0, 0);
   }, []);
   return (
@@ -73,7 +74,7 @@ const ContactUs = () => {
                                   <textarea name="message" id="" cols="20" rows="10"></textarea>
                               </div>
                           </div>
-                          <div className="col-md-3 offset-md-9">
+                          <div className="submitbutton col-md-3 offset-md-9">
                               <div className="bg-brown rounded text-white form-input">
                                   <input type="submit" defaultValue="Send  Message" className="btn gradient_btn btn-fill"/>
                               </div>

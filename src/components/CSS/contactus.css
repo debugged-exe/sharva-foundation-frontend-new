@@ -26,7 +26,7 @@
 }
 .ContactUs form{
     width: 840px;
-height: 693px;
+height: 100%;
 }
 .form-input{
     display: flex;
@@ -281,10 +281,36 @@ height: 693px;
 
 
 .ContactUs .contact_box1{
-    font-size: 7px;
+    font-size: 15px;
+    flex-direction: column;
+    margin: 20px;
 }
 
 .ContactUs .contact_box1 h3{
-    font-size: 15px;
+    font-size: 25px;
+}
+.ContactUs .carousel-caption {
+   
+    bottom: 29.25rem;
+    
+}
+.ContactUs .map-img{
+    width: 100%;
+}
+.contact_background_image {
+
+    height: 28vh;
+
+}
+.ContactUs .submitbutton{
+    margin-bottom   : 10px;
+}
+.ContactUs .contact-map{
+    width: 100%;
+}
+.ContactUs .map_img .contact-map iframe {
+    width: 100%;
+    margin: 0px;
+    height: 400px;
 }
 }
