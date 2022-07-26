@@ -1,0 +1,55 @@
+.navbar{
+    height: 60px !important;
+    margin: 0 !important;padding: 0 !important;
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+}
+.line{
+    width: 100%;
+    height: 0%;
+    background-color: rgb(232, 143, 10) ;
+    border: 3px solid rgb(232, 143, 10)    ;
+}
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.above_navbar_div{
+    margin: 0 !important;
+ 
+
+}
+
+.nav-item{
+    margin: 0px 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+}
+.navbar .sharva-logo{
+    padding: 5px;
+}
+.nav-item button{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 425px) {
+ 
+    .navbar{
+        width: 100%;
+        
+      
+    }
+    .collapse{
+        justify-content: center;
+    }
+    
+  }
