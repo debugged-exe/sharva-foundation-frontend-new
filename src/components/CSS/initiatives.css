@@ -56,3 +56,38 @@
 .initiatives .intiative-caorusel{
     width: 100%;
 }
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+  .initiatives .carousel-caption {
+
+    bottom: 24.25rem;
+
+  }
+  .container .content1 , .container .content2{
+ margin: 10px !important;
+ padding: 10px !important; 
+} 
+.initiatives .section3 {
+
+    flex-direction: column;
+
+}
+.section3 .section-img {
+    width: 100%;
+
+}.section3 .section-img img {
+    width: 100%;
+
+}
+.section3 .content3 {
+    width: 100%;
+    padding: 10px !important;
+    margin: 10px !important;
+    text-align: justify;
+}
+.initiatives .owl-theme img {
+    width: 95%;
+    height: auto;
+}
+  }
