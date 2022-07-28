@@ -4,7 +4,7 @@ import sharva from "./images/sharva.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="container my-5 py-5">
+    <div className="container my-5 py-5" id="AboutUs">
       <div className="headings_about_us   ">
         {/* <h5 >Lorem ipsum dolor sit amet.</h5>{" "} */}
         <h1 >ABOUT SHARVA</h1>

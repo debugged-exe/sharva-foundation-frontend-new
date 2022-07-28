@@ -3,6 +3,8 @@ import merchancise_1 from "./images/merchandise_1.png";
 import merchancise_2 from "./images/merchandise_2.png";
 import merchancise_3 from "./images/merchandise_3.png";
 import './CSS/home.css'
+import { Link } from "react-router-dom";
+
 const MerchantDise = () => {
   return (
     <div>
@@ -14,7 +16,10 @@ const MerchantDise = () => {
         </div>
         <div className="button m-4  " >
           <button className="gradient_btn mx-5  px-4 p-2 rounded text-white ">
-            <strong>JOIN US NOW</strong>
+            <strong><Link className="home_join_us" to="/join-us">
+
+JOIN US NOW
+</Link> </strong>
           </button>
         </div>
       </div>

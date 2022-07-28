@@ -900,9 +900,19 @@ figure {
     width: 100%;
     flex-direction: row;
   }
-  .gallery_section_img img {
-    width: 100%;
+  .gallery__image{
+    width: 150px;
+    height: 100px;
+  }  .gallery__link{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
+  /* .gallery_section_img img {
+    width: 0%;
+  } */
   .gallery_heading .line {
     width: 80%;
   }
@@ -993,6 +1003,10 @@ figure {
   }
   .caruosel_for_merchandise {
     width: 90%;
+  }
+  .home_join_us{
+    text-decoration: none;
+    color: white;
   }
   .join_us .content {
     width: 100vw;
@@ -1106,6 +1120,7 @@ figure {
   }
   .credit {
     margin: 5px;
+    padding: 0px;
     flex-direction: column !important;
 }
 .cards_image {
@@ -1132,11 +1147,23 @@ figure {
     margin: 5px;
     padding: 5px;
     width: 100%;
+    /* font-size: px; */
+    
     text-align: justify;
+  }
+  .gradient_for_donation_card .text-yellow {
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
   }
   .contactus_footer footer {
     width: 100%;
   }
+  .donation_background .owl-theme .card-title {
+    text-align: center;
+    font-size: 35px;
+    color: #ff9100 !important;
+}
 }
 
 /* Food kits distributed: 12,740

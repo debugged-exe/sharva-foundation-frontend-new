@@ -1,0 +1,58 @@
+.intiatives .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intiative_background_image{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-image: linear-gradient(to top, #0000006e, #00000077), url("../images/gallery_img_1.png")  ;
+
+    background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.initiatives .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 23.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+}
+
+.container .content1 , .container .content2{
+    text-align: justify;
+}
+.initiatives .section3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.section3 .section-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}.section3 .section-img img{
+    width: 70%;
+}
+.section3 .content3{
+    width: 50%;
+    text-align: justify;
+}
+.initiatives .owl-theme{
+    width: 100%;
+}.initiatives .owl-theme img{
+    width: 100%;
+
+}
+.initiatives .intiative-caorusel{
+    width: 100%;
+}

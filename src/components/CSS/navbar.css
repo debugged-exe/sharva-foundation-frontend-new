@@ -13,7 +13,7 @@
     background-color: rgb(232, 143, 10) ;
     border: 3px solid rgb(232, 143, 10)    ;
 }
-.collapse{
+nav .collapse{
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -59,7 +59,7 @@
  
     .navbar{
         width: 100%;
-        
+        height: 70px !important;
       
     }
     .above_navbar_div   .collapse{
