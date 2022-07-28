@@ -116,7 +116,7 @@ const Navbar = () => {
                     transition: "all 0.5s",
                     color: textColor,
                   }}
-                  href="http://localhost:3000/#AboutUs"
+                  href="https://nimble-pudding-8b267a.netlify.app/#AboutUs"
                 >
                   ABOUT US
                 </a>

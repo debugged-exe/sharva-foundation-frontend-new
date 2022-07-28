@@ -489,17 +489,19 @@ html {
 .footer_section_2 {
   width: 100%;
   display: flex;
+  padding: 0 !important;
+  margin: 0 !important;
   justify-content: center;
 }
 .socials {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
 }
 .socials a {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 .cards_image {
   text-align: center;
@@ -510,9 +512,9 @@ html {
   align-items: center;
 }
 .socials img {
-  width: 40px;
+  width: 30px;
   margin: 6px;
-  padding: 5px;
+
 }
 .contact_submit_btn:hover {
   transform: scale(1);
@@ -663,6 +665,7 @@ footer .line {
   justify-content: space-around;
   margin: 30px;
 }
+
 .merchandise_main_box .merchandise_content {
   width: 50%;
   text-align: justify;
@@ -838,6 +841,10 @@ figure {
   text-decoration: none;
   color: white;
 }
+.home_join_us{
+  text-decoration: none;
+  color: white;
+}
 @media screen and (min-device-width: 320px) and (max-device-width: 540px) {
   .count_box {
     width: 150px;
@@ -1004,10 +1011,7 @@ figure {
   .caruosel_for_merchandise {
     width: 90%;
   }
-  .home_join_us{
-    text-decoration: none;
-    color: white;
-  }
+ 
   .join_us .content {
     width: 100vw;
   }
@@ -1120,7 +1124,7 @@ figure {
   }
   .credit {
     margin: 5px;
-    padding: 0px;
+    padding: 0px !important;
     flex-direction: column !important;
 }
 .cards_image {
@@ -1139,6 +1143,8 @@ figure {
   }
   .footer_2 {
     flex-direction: column;
+    padding: 0 !important;
+    width: 100%;
   }
   .footer_2 div {
     width: 100%;

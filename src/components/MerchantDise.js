@@ -6,6 +6,7 @@ import './CSS/home.css'
 import { Link } from "react-router-dom";
 
 const MerchantDise = () => {
+  
   return (
     <div>
       <div className="join_us bg-dark d-flex  justify-content-between p-3">
