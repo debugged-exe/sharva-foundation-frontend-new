@@ -20,129 +20,129 @@ const Gallery2 = () => {
         <div className="line"></div>
       </div>
 
-      <div class="gallery">
-        <div class="gallery__column">
-          <a href={gallery_img_1} class="gallery__link">
-            <figure class="gallery__thumb">
+      <div className="gallery">
+        <div className="gallery__column">
+          <a href={gallery_img_1} className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_1}
                 alt="Portrait by Jessica Felicio"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
 
-          <a href="https://unsplash.com/@oladimeg" class="gallery__link">
-            <figure class="gallery__thumb">
+          <a href="https://unsplash.com/@oladimeg" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_2}
                 alt="Portrait by Oladimeji Odunsi"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
-          <a href="https://unsplash.com/@von_co" class="gallery__link">
-            <figure class="gallery__thumb">
+          <a href="https://unsplash.com/@von_co" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_3}
                 alt="Portrait by Ivana Cajina"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
         </div>
 
-        <div class="gallery__column">
-          <a href="https://unsplash.com/@noahbuscher" class="gallery__link">
-            <figure class="gallery__thumb">
+        <div className="gallery__column">
+          <a href="https://unsplash.com/@noahbuscher" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_4}
                 alt="Portrait by Noah Buscher"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
 
-          <a href="https://unsplash.com/@von_co" class="gallery__link">
-            <figure class="gallery__thumb">
+          <a href="https://unsplash.com/@von_co" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_6}
                 alt="Portrait by Ivana Cajina"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
-          <a href="https://unsplash.com/@von_co" class="gallery__link">
-            <figure class="gallery__thumb">
+          <a href="https://unsplash.com/@von_co" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_5}
                 alt="Portrait by Ivana Cajina"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
         </div>
 
-        <div class="gallery__column">
-          <a href="https://unsplash.com/@marilezhava" class="gallery__link">
-            <figure class="gallery__thumb">
+        <div className="gallery__column">
+          <a href="https://unsplash.com/@marilezhava" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_7}
                 alt="Portrait by Mari Lezhava"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
 
-          <a href="https://unsplash.com/@ethanhaddox" class="gallery__link">
-            <figure class="gallery__thumb">
+          <a href="https://unsplash.com/@ethanhaddox" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_8}
                 alt="Portrait by Ethan Haddox"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
-          <a href="https://unsplash.com/@von_co" class="gallery__link">
-            <figure class="gallery__thumb">
+          <a href="https://unsplash.com/@von_co" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_9}
                 alt="Portrait by Ivana Cajina"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
         </div>
 
-        <div class="gallery__column">
-          <a href="https://unsplash.com/@frxgui" class="gallery__link">
-            <figure class="gallery__thumb">
+        <div className="gallery__column">
+          <a href="https://unsplash.com/@frxgui" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_10}
                 alt="Portrait by Guilian Fremaux"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
 
           <a
             href="https://unsplash.com/@majestical_jasmin"
-            class="gallery__link"
+            className="gallery__link"
           >
-            <figure class="gallery__thumb">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_11}
                 alt="Portrait by Jasmin Chew"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>
-          <a href="https://unsplash.com/@von_co" class="gallery__link">
-            <figure class="gallery__thumb">
+          <a href="https://unsplash.com/@von_co" className="gallery__link">
+            <figure className="gallery__thumb">
               <img
                 src={gallery_img_12}
                 alt="Portrait by Ivana Cajina"
-                class="gallery__image"
+                className="gallery__image"
               />
             </figure>
           </a>

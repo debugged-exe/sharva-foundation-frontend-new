@@ -31,15 +31,15 @@ JOIN US NOW
         <div className="merchandise_main_box">
           <div
             id="carouselExampleIndicators"
-            class=" caruosel_for_merchandise carousel slide"
+            className=" caruosel_for_merchandise carousel slide"
             data-bs-ride="true"
           >
-            <div class="carousel-indicators">
+            <div className="carousel-indicators">
               <button
                 type="button"
                 data-bs-target="#carouselExampleIndicators"
                 data-bs-slide-to="0"
-                class="active"
+                className="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>
@@ -56,14 +56,14 @@ JOIN US NOW
                 aria-label="Slide 3"
               ></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
                 <img src={merchancise_1} alt="error" />
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img src={merchancise_2} alt="error" />
               </div>
-              <div class="carousel-item">
+              <div className="carousel-item">
                 <img src={merchancise_3} alt="error" />
               </div>
             </div>

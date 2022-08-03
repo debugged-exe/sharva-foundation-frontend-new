@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 
 import "../components/CSS/home.css";
 import food from "./images/food.png";
@@ -10,6 +10,32 @@ import sanitary from "./images/sanitary-napkin.png";
 import CountCard from "./CountCard";
 
 const Count = () => {
+  const [countsData, setCountsData] = useState([]);
+  useEffect(() => {
+   const usercount = async () => {
+    try {
+      const res = await fetch(
+        "https://sharva-backend.herokuapp.com/fetch_counts",
+        {
+          method: "GET",
+          headers: {
+            "content-type": "application/json",
+          },
+        }
+      );
+      const data = await res.json();
+      console.log(data);
+      setCountsData(data);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  
+    usercount()
+  }, []);
+
+  
   return (
     <div className="my-5 py-4 ">
     <h1 className="text-center my-4">OUR PROGRESS</h1>
@@ -28,40 +54,42 @@ const Count = () => {
               </div>
               <span></span> */}
               <div className="justify-content-center d-flex flex-wrap">
-                <CountCard
-                  title="Food Kits Distributed"
-                  logo={food}
-                  count="12791"
+              <CountCard
+                  title="Blood Donated"
+                  logo={blood}
+                  count={countsData[0].blood_donated}
                 />
+             
                 <CountCard
                   title="People Helped"
                   logo={help}
-                  count=" 22023"
+                  count={countsData[0].people_helped}
                 />
-                <CountCard
-                  title="Blood Donated"
-                  logo={blood}
-                  count="60"
-                />
-                <CountCard
-                  title="Volunteers"
-                  logo={man}
-                  count="217"
-                />
-                <CountCard
-                  title="Trees Planted"
-                  logo={trees}
-                  count="631"
+               <CountCard
+                  title="Reflective Collars"
+                  logo="https://cdn-icons-png.flaticon.com/128/1202/1202341.png"
+                  count={countsData[0].reflective_collars}
                 />
                 <CountCard
                   title="Sanitary Stock Donated "
                   logo={sanitary}
-                  count="13179"
+                  count={countsData[0].sanitary_donated}
                 />
+               
                 <CountCard
-                  title="Reflective Collars"
-                  logo="https://cdn-icons-png.flaticon.com/128/1202/1202341.png"
-                  count="300"
+                  title="Trees Planted"
+                  logo={trees}
+                  count={countsData[0].trees_planted}
+                />
+                 <CountCard
+                  title="Volunteers"
+                  logo={man}
+                  count={countsData[0].volunteers}
+                />
+                   <CountCard
+                  title="Food Kits Distributed"
+                  logo={food}
+                  count={countsData[0].food_kits}
                 />
                 {/* 
                 <div className="_count_upper_section1 "></div> */}

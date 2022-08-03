@@ -46,8 +46,8 @@ const JoinUs = () => {
 
       <div className="checkout-content container mt-5">
         <div className="checkout-wrapper">
-          <div class="scrollbar" id="style-7">
-            <div class="force-overflow">
+          <div className="scrollbar" id="style-7">
+            <div className="force-overflow">
               <form className="register-form">
                 <div className="row d-flex justify-content-center">
                   <div className="col-md-10 p-2 my-2">
@@ -224,10 +224,10 @@ const JoinUs = () => {
                             </label>
 
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -235,7 +235,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Field Work
@@ -243,10 +243,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -254,7 +254,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Photography
@@ -262,10 +262,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -273,7 +273,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Video Editor
@@ -281,10 +281,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -292,7 +292,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Content Writing
@@ -300,10 +300,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -311,7 +311,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Fund Raising
@@ -319,10 +319,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -330,7 +330,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Creatives
@@ -338,10 +338,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -349,7 +349,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Awareness Sessions
@@ -357,10 +357,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -368,7 +368,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Marketing
@@ -376,10 +376,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -387,7 +387,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Graphic Designing
@@ -395,10 +395,10 @@ const JoinUs = () => {
                               </div>
                             </div>
                             <div className="checkbox1 ">
-                              <div class="input-group mb-3">
-                                <div class="input-group-text">
+                              <div className="input-group mb-3">
+                                <div className="input-group-text">
                                   <input
-                                    class="form-check-input mt-0"
+                                    className="form-check-input mt-0"
                                     type="checkbox"
                                     value=""
                                     aria-label="Checkbox for following text input"
@@ -406,7 +406,7 @@ const JoinUs = () => {
                                 </div>
                                 <label
                                   type="text"
-                                  class="form-control"
+                                  className="form-control"
                                   aria-label="Text input with checkbox"
                                 >
                                   Strategies Buildup

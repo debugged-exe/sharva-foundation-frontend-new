@@ -56,7 +56,7 @@ const DonationCard = (props) => {
           className="container owl-theme"
           {...options}
           loop
-          autoPlay="true"
+          autoPlay={true}
           margin={55}
         >
           <div className="card bg-transparent">
@@ -144,7 +144,7 @@ const DonationCard = (props) => {
              alt="error"
             />
             <div className="card-body">
-              <h5 className="card-title text-white"> Give her Winfs To Fly</h5>
+              <h5 className="card-title text-white"> Give her Wings To Fly</h5>
               <p className="card-text text-white">
                 Mensturation is a biological process and females , from puberty
                 till menopause , have no control over it. With this initiative,
@@ -192,11 +192,11 @@ const DonationCard = (props) => {
    
             // customTransition="all .5"
             transitionDuration={4000}
-            containerClass="carousel-container"
+            containerclassName="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile"]}
             deviceType={props.deviceType}
-            dotListClass="custom-dot-list-style"
-            itemClass="carousel-item-padding-40-px"
+            dotListclassName="custom-dot-list-style"
+            itemclassName="carousel-item-padding-40-px"
           >
             <div className="card bg-transparent">
               <img
