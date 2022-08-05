@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./CSS/joinus.css";
 import donation_card_1 from "./images/donation_card_2.jpg";
 import donation_card_2 from "./images/donation_card_2.jpg";
@@ -9,6 +9,119 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const JoinUs = () => {
+  const [userData, setUserData] = useState({
+    firstname:"",
+    lastname:"",
+    email:"",
+    dob:"",
+    gender:"",
+    street_address:"",
+    state_province:"",
+    city:"",
+    zip_code:"",
+    blood_grp:"",
+    current_city:"",
+    category:[],
+    reason_to_join:"",
+  });
+
+  const handleInputs = (e) => {
+    const { name, value } = e.target;
+
+    setUserData({
+      ...userData,
+      [name]: value,
+    });
+    console.log(value)
+  };
+  
+  const feedbackform = async (e) => {
+    e.preventDefault();
+    const {
+      firstname,
+      lastname,
+      email,
+      dob,
+      gender,
+      street_address,
+      state_province,
+      city,
+      zip_code,
+      blood_grp,
+      current_city,
+      category,
+      reason_to_join,
+    } = userData;
+    try {
+      const res = await fetch(
+        "https://sharva-backend.herokuapp.com/post-joinus",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify({
+            firstname:firstname,
+            lastname:lastname,
+            email:email,
+            dob:dob,
+            gender:gender,
+            street_address:street_address,
+            state_province:state_province,
+            city:city,
+            zip_code:zip_code,
+            blood_grp:blood_grp,
+            current_city:current_city,
+            category:category,
+            reason_to_join:reason_to_join,
+          }),
+        }
+      );
+
+      const data = await res.json();
+      console.log(data);
+      if (data === "") {
+        console.log("msg not sent");
+      } else {
+        alert("message sent");
+        setUserData({
+          ...userData,
+          firstname: "",
+          lastname: "",
+          email: "",
+          dob: "",
+          gender: "",
+          street_address: "",
+          state_province: "",
+          city: "",
+          zip_code: "",
+          blood_grp: "",
+          current_city: "",
+          category:[],
+          reason_to_join: "",
+        });
+      }
+      setUserData({
+        ...userData,
+        firstname: userData.firstname,
+        lastname: userData.lastname,
+        email: userData.email,
+        dob: userData.dob,
+        gender: userData.gender,
+        street_address: userData.street_address,
+        state_province: userData.state_province,
+        city: userData.city,
+        zip_code: userData.zip_code,
+        blood_grp: userData.blood_grp,
+        current_city: userData.current_city,
+        category: userData.category,
+        reason_to_join: userData.reason_to_join,
+      });
+    } catch (err) {
+      console.log(err);
+      alert("this email already exist");
+    }
+  };
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -48,7 +161,7 @@ const JoinUs = () => {
         <div className="checkout-wrapper">
           <div className="scrollbar" id="style-7">
             <div className="force-overflow">
-              <form className="register-form">
+              <form onSubmit={feedbackform} className="register-form">
                 <div className="row d-flex justify-content-center">
                   <div className="col-md-10 p-2 my-2">
                     {/* <!-- Checkout Form  --> */}
@@ -56,14 +169,17 @@ const JoinUs = () => {
                       <div className="row">
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="firstName" className="title">
+                            <label htmlFor="firstName" className="title">
                               First Name
                             </label>
                             <input
                               type="text"
                               className="bg-white   checkout_input"
-                              name="firstName"
+                              name="firstname"
                               id="firstName"
+                              placeholder="enter your first name"
+                              value={userData.firstname}
+                              onChange={handleInputs}
                               required
                             />
                           </div>
@@ -71,14 +187,16 @@ const JoinUs = () => {
 
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="lastName" className="title">
+                            <label htmlFor="lastName" className="title">
                               Last Name
                             </label>
                             <input
                               type="text"
+                              name="lastname"
                               className="bg-white border-0 checkout_input"
-                              name="lastName"
                               id="lastName"
+                              value={userData.lastname}
+                              onChange={handleInputs}
                               required
                             />
                           </div>
@@ -86,7 +204,7 @@ const JoinUs = () => {
 
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="email" className="title">
+                            <label htmlFor="email" className="title">
                               Your Email
                             </label>
                             <input
@@ -94,50 +212,61 @@ const JoinUs = () => {
                               name="email"
                               className="bg-white border-0 checkout_input"
                               id="email"
+                              value={userData.email}
+                              onChange={handleInputs}
                               required
                             />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="email" className="title">
+                            <label htmlFor="email" className="title">
                               Date of Birth
                             </label>
                             <input
                               type="date"
                               placeholder="Enter BirthDate"
-                              name="birthdate"
+                              name="dob"
+                              value={userData.dob}
+                              onChange={handleInputs}
                             />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="email" className="title">
+                            <label htmlFor="email" className="title">
                               Gender
                             </label>
-                            <select className="form-select">
-                              <option name="male"> Male</option>
-                              <option name="female">Female</option>
-                              <option name="female">Cis-male</option>
-                              <option name="female">Cis-female</option>
-                              <option name="female">Trans male</option>
-                              <option name="female">Trans female</option>
-                              <option name="female">Non-binary</option>
-                              <option name="female">Prefer Not to Say</option>
+                            <select
+                              className="form-select"
+                             name="gender"
+                              defaultValue= {userData.gender}
+                              onChange={handleInputs}
+                            >
+                              <option  value={"female"}>Female</option>
+                              <option  value={"male"}> Male</option>
+                              <option  value={"cis-male"}>Cis-male</option>
+                              <option  value={"cis-female"}>Cis-female</option>
+                              <option  value={"trans-male"}>Trans male</option>
+                              <option  value={"trans-female"}>Trans female</option>
+                              <option  value={"non-binary"}>Non-binary</option>
+                              <option  value={"prefer-not-to-say"}>Prefer Not to Say</option>
                             </select>
                           </div>
                         </div>
 
                         <div className="col-md-6">
                           <div className="form-input input-box d-flex row">
-                            <label htmlfor="address1" className="title">
+                            <label htmlFor="address1" className="title">
                               Street Address
                             </label>
                             <input
                               type="text"
                               className="bg-white border-0 checkout_input"
-                              name="address1"
+                              name="street_address"
                               id="address1"
+                              value={userData.street_address}
+                              onChange={handleInputs}
                             />
                           </div>
                         </div>
@@ -146,21 +275,23 @@ const JoinUs = () => {
 
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="state" className="title">
+                            <label htmlFor="state" className="title">
                               State/Province
                             </label>
                             <input
                               type="text"
                               className="bg-white border-0 checkout_input"
-                              name="state"
+                              name="state_province"
                               id="state"
+                              value={userData.state_province}
+                              onChange={handleInputs}
                             />
                           </div>
                         </div>
 
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="city" className="title">
+                            <label htmlFor="city" className="title">
                               City
                             </label>
                             <input
@@ -168,58 +299,71 @@ const JoinUs = () => {
                               className="bg-white border-0 checkout_input"
                               name="city"
                               id="city"
+                              value={userData.city}
+                              onChange={handleInputs}
+                              required
                             />
                           </div>
                         </div>
 
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="zipcode" className="title">
+                            <label htmlFor="zipcode" className="title">
                               Zip/Postal Code
                             </label>
                             <input
                               type="text"
                               className="bg-white border-0 checkout_input"
-                              name="zipcode"
+                              name="zip_code"
                               id="zipcode"
+                              value={userData.zip_code}
+                              onChange={handleInputs}
                             />
                           </div>
                         </div>
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="email" className="title">
+                            <label htmlFor="email" className="title">
                               Blood Group
                             </label>
-                            <select className="form-select">
-                              <option name="male">Select an Option</option>
-                              <option name="male"> A+</option>
-                              <option name="female">A-</option>
-                              <option name="female">B+</option>
-                              <option name="female">B-</option>
-                              <option name="female">AB+</option>
-                              <option name="female">AB-</option>
-                              <option name="female">O+</option>
-                              <option name="female">O-</option>
+                            <select
+                              className="form-select"
+                              name="blood_grp"
+                              defaultValue={userData.blood_grp}
+                              onChange={handleInputs}
+                              placeholder="select and option"
+                            >
+                              
+                              <option value={"A+"} > A+</option>
+                              <option value={"A-"} >A-</option>
+                              <option value={"B+"} >B+</option>
+                              <option value={"B-"} >B-</option>
+                              <option value={"AB+"} >AB+</option>
+                              <option value={"AB-"} >AB-</option>
+                              <option value={"O+"} >O+</option>
+                              <option value={"O-"} >O-</option>
                             </select>
                           </div>
                         </div>
 
                         <div className="col-md-6">
                           <div className="form-input d-flex row">
-                            <label htmlfor="phone" className="title">
+                            <label htmlFor="phone" className="title">
                               Current City
                             </label>
                             <input
                               type="text"
                               className="bg-white border-0 checkout_input"
-                              name="city"
+                              name="current_city"
+                              value={userData.current_city}
+                              onChange={handleInputs}
                               id="city"
                             />
                           </div>
                         </div>
                         <div className="col-md-10">
                           <div className=" d-flex row">
-                            <label htmlfor="phone" className="title">
+                            <label htmlFor="phone" className="title">
                               Individual Categories
                             </label>
 
@@ -229,7 +373,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"field-work"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -248,7 +392,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"photography"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -267,7 +411,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"video-editor"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -286,7 +430,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"content-writing"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -305,7 +449,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"fund-raising"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -324,7 +468,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"creatives"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -343,7 +487,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"awareness-sessions"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -362,7 +506,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"marketing"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -381,7 +525,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"graphic-designing"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -400,7 +544,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value=""
+                                    value={"strategies-buildup"} name="category" 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -421,10 +565,12 @@ const JoinUs = () => {
                               Why do you want to Join Us?
                             </label>
                             <textarea
-                              name="message"
+                              name="reason_to_join"
                               id=""
                               cols="20"
                               rows="10"
+                              value={userData.reason_to_join}
+                              onChange={handleInputs}
                             ></textarea>
                           </div>
                         </div>
@@ -453,7 +599,7 @@ const JoinUs = () => {
           className="container owl-theme"
           {...options}
           loop
-          autoPlay="true"
+          autoPlay={true}
           margin={5}
         >
           <div className="img">

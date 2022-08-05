@@ -116,6 +116,22 @@ html {
 
   border-radius: 12px;
 }
+.counter_section .heading_for_counter{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.counter_section .heading_for_counter  .line{
+  width: 400px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 1.2px;
+  margin-bottom: 25px;
+  
+}
 .count_users {
   width: 100%;
   border-radius: 12px;
@@ -1153,8 +1169,6 @@ figure {
     margin: 5px;
     padding: 5px;
     width: 100%;
-    /* font-size: px; */
-    
     text-align: justify;
   }
   .gradient_for_donation_card .text-yellow {
@@ -1172,10 +1186,3 @@ figure {
 }
 }
 
-/* Food kits distributed: 12,740
-People helped:  21,912
-Blood donated: 60
-Volunteers: 217
-Trees planted: 631
-Sanitary stock donated to: 13179 girls 
-Reflective collars: 300 */

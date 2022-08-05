@@ -1,5 +1,7 @@
 import React,{useEffect} from 'react'
+import ContactHome from './ContactHome';
 import './CSS/contactus.css'
+import './CSS/home.css'
 const ContactUs = () => {
   useEffect(() => {
     
@@ -48,7 +50,7 @@ const ContactUs = () => {
                  
 
                   {/* <!-- Contact Form  --> */}
-                  <form action="">
+                  {/* <form action="">
                       <div className="row">
                           <div className="col-md-6">
                               <div className="form-input">
@@ -80,9 +82,11 @@ const ContactUs = () => {
                               </div>
                           </div>
                       </div>
-                  </form>
+                  </form> */}
+
 </div>
               </div>
+                  <ContactHome/>
 
   </div>
   )
