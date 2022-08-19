@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./CSS/joinus.css";
+import "./CSS/joinus.css";import "./CSS/home.css";
 import donation_card_1 from "./images/donation_card_2.jpg";
 import donation_card_2 from "./images/donation_card_2.jpg";
 import donation_card_3 from "./images/donation_card_3.jpg";
@@ -34,7 +34,40 @@ const JoinUs = () => {
     });
     console.log(value)
   };
-  
+  const [category, setCategory] = useState([])
+  const [categoryFlag, setCategoryFlag] = useState(false)
+  const [categoryErr, setCategoryErr] = useState('')
+
+  const addCategory = (event) => {
+    const {checked, value} = event.target;
+    if (checked) {
+      const arr = value;
+      category.push(arr);
+      setCategoryFlag(true);
+      setCategoryErr('');
+    }
+    else
+    {
+      const index = category.indexOf(value)
+      if (index > -1) {
+        category.splice(index, 1)
+        if(category.length===0)
+        {
+          setCategoryFlag(false);
+        }
+      }
+    }
+  }
+
+  const categoryValidate = () => {
+    if(categoryFlag===false)
+    {
+      setCategoryErr('Mention atleast one category you want to work in.')
+    }
+  }
+
+  // const URL = 'https://sharva-backend.herokuapp.com/'
+  const URL  = 'http://localhost:5000'
   const feedbackform = async (e) => {
     e.preventDefault();
     const {
@@ -54,7 +87,7 @@ const JoinUs = () => {
     } = userData;
     try {
       const res = await fetch(
-        "https://sharva-backend.herokuapp.com/post-joinus",
+        `${URL}post-joinus`,
         {
           method: "POST",
           headers: {
@@ -367,13 +400,13 @@ const JoinUs = () => {
                               Individual Categories
                             </label>
 
-                            <div className="checkbox1 ">
+                            <div className="checkbox1    ">
                               <div className="input-group mb-3">
                                 <div className="input-group-text">
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"field-work"} name="category" 
+                                    value={"field-work"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -392,7 +425,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"photography"} name="category" 
+                                    value={"photography"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -411,7 +444,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"video-editor"} name="category" 
+                                    value={"video-editor"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -430,7 +463,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"content-writing"} name="category" 
+                                    value={"content-writing"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -449,7 +482,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"fund-raising"} name="category" 
+                                    value={"fund-raising"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -468,7 +501,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"creatives"} name="category" 
+                                    value={"creatives"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -487,7 +520,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"awareness-sessions"} name="category" 
+                                    value={"awareness-sessions"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -506,7 +539,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"marketing"} name="category" 
+                                    value={"marketing"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -525,7 +558,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"graphic-designing"} name="category" 
+                                    value={"graphic-designing"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -544,7 +577,7 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"strategies-buildup"} name="category" 
+                                    value={"strategies-buildup"} name="category" onClick={addCategory()} 
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -594,10 +627,10 @@ const JoinUs = () => {
           </div>
           {/* <!-- Checkout Form --> */}
         </div>
-        <OwlCarousel
+        {/* <OwlCarousel
           items={1}
           className="container owl-theme"
-          {...options}
+       
           loop
           autoPlay={true}
           margin={5}
@@ -617,7 +650,49 @@ const JoinUs = () => {
           <div className="img">
             <img src={donation_card_5} alt="error" />
           </div>
-        </OwlCarousel>
+        </OwlCarousel> */}
+        <div className="merchandise_main_box">
+          <div
+            id="carouselExampleIndicators"
+            className=" caruosel_for_merchandise carousel slide"
+            data-bs-ride="true"
+          >
+            <div className="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={donation_card_1} alt="error" />
+              </div>
+              <div className="carousel-item">
+                <img src={donation_card_2} alt="error" />
+              </div>
+              <div className="carousel-item">
+                <img src={donation_card_3} alt="error" />
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
   );

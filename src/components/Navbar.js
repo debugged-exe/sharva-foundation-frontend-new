@@ -85,23 +85,49 @@ const Navbar = () => {
                       data-toggle="collapse"
                       data-target=".navbar-collapse.show"
                       className="dropdown-item"
-                      to="/initiatives"
+                      to="/foodforcause"
                     >
-                      Action
+                      Food For Cause
                     </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
-                      Another action
-                    </a>
+                    <Link
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse.show"
+                      className="dropdown-item"
+                      to="/strivewithpride"
+                    >
+                      Strive With Pride
+                    </Link>
                   </li>
+                 
                   <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="/">
-                      Something else here
-                    </a>
+                    <Link
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse.show"
+                      className="dropdown-item"
+                      to="/giveherwings"
+                    >
+                      Give her wings to fly 
+                    </Link>
+                  </li><li>
+                    <Link
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse.show"
+                      className="dropdown-item"
+                      to="/projectgreen"
+                    >
+                      Project Green
+                    </Link>
+                  </li><li>
+                    <Link
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse.show"
+                      className="dropdown-item"
+                      to="/blooddonation"
+                    >
+                      Blood Donation
+                    </Link>
                   </li>
                 </ul>
               </li>

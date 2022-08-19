@@ -44,12 +44,7 @@ const DonationCard = (props) => {
         <h1 className="text-yellow ">Our Recent Causes to Serve Better</h1>
         <div className="line"></div>
         <div className="title text-white ">
-          Making society a better place to live in is neither a one-day task nor
-          an individual’s job. Well, it is not impossible too but we, Sharva
-          Foundation, need all the resources that we can garner to continue our
-          constant efforts. The ongoing projects reflect our commitment towards
-          the causes that need urgent or intense efforts. Give us a helping hand
-          to make a real impact in the real world!
+        Making society a better place to live in is neither a one-day task nor an individual’s job. Well, it is not impossible too but we, Sharva Foundation, need all the resources that we can garner to continue our constant efforts. The ongoing projects reflect our commitment towards the causes that need urgent or intense efforts. Give us a helping hand to make a real impact in the real world!
         </div>
 
         <OwlCarousel
@@ -66,12 +61,11 @@ const DonationCard = (props) => {
              alt="error"
             />
             <div className="card-body">
-              <h5 className="card-title text-white"> Rupees 1 Campaign</h5>
+              <h5 className="card-title text-white">One by everyone</h5>
               <p className="card-text text-white">
-                Have you ever heard of the proverb "little drops make the mighty
-                ocean"? we believe that if evn only one rupee contribution is
-                made by a large mass , it can help us to proactively offer help
-                for any caouse or tragedies due to an uncalled situation
+              
+Have you ever heard of the proverb ”little drops make the mighty ocean”? With this campaign, we are trying to pursue just that. We believe that if even only one rupee contribution is made by a large mass, it can help us to proactively offer help for any cause or tragedies due to an uncalled situation.
+
               </p>
             </div>
             <button className="rounded gradient_btn  btn button text-white">
@@ -105,13 +99,9 @@ const DonationCard = (props) => {
              alt="error"
             />
             <div className="card-body">
-              <h5 className="card-title text-white"> As Free As a Bird</h5>
+              <h5 className="card-title text-white">Sanitary Napkin Distribution Drive</h5>
               <p className="card-text text-white">
-                Mensturation is a biological process and females , from puberty
-                till menopause , have no control over it. With this initiative,
-                we provide thress months, six months, or a yearly stock of
-                sanitary napkins to girls who struggle to maintain mensturation
-                hygiene due to financial challenges or less awareness
+              Menstruation is a biological process and females, from puberty till menopause, have no control over it. With this initiative, we provide three months, six months, or a yearly stock of sanitary napkins to girls who struggle to maintain menstruation hygiene due to financial challenges or less awareness.
               </p>
             </div>
             <button className="rounded gradient_btn  btn button text-white">
@@ -127,10 +117,7 @@ const DonationCard = (props) => {
             <div className="card-body">
               <h5 className="card-title text-white"> Food For Cause</h5>
               <p className="card-text text-white">
-                Food is teh most basic necessity and still, a large population
-                sleeps hungry and wakes up malnutrition. Since the inception of
-                this campaign, our voluenteers have completed 100+ food drives
-                where we served cooded and packed meals to the needy.
+              Food is the most basic necessity and still, a large population sleeps hungry and wakes up malnutrition. Since the inception of this campaign, our volunteers have completed 100+ food drives where we served cooked and packed meals to the needy.
               </p>
             </div>
             <button className="rounded gradient_btn  btn button text-white">
