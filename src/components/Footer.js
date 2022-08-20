@@ -108,10 +108,10 @@ const Footer = () => {
                   <img src={whatsapp} alt="error" />
                 </a>
                 <a href="https://www.facebook.com/Sharva-Aikyam-Foundation-571908020152850/">
-                  <img src={facebook} alt="error" />
+                  <img className="facebooklogo" src={facebook} alt="error" />
                 </a>
                 <a href="mailto:team.foundationsharva@gmail.com?subject=Joining%20a%20good%20cause">
-                  <img src={gmail} alt="error" />
+                  <img className="emaillogo" src={gmail} alt="error" />
                 </a>
                 <a href="https://www.facebook.com/Sharva-Aikyam-Foundation-571908020152850/">
                   <img src={twitter} alt="error" />
@@ -120,12 +120,12 @@ const Footer = () => {
                   <img src={linkedin} alt="error" />
                 </a>
                 <a href="https://www.youtube.com/channel/UCZT6olVE-2v_LWqXmrbqPug">
-                  <img src={youtube} alt="error" />
+                  <img className="youtubelogo" src={youtube} alt="error" />
                 </a>
               </div>
               <div className="debugged">
                 © Copyrights 2020 |{" "}
-                <a href="debuggedexe.com">
+                <a href="https://www.debuggedexe.com">
                   debugged.exe
                 </a>
               </div>

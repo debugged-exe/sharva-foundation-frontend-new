@@ -1,5 +1,11 @@
 import React from 'react'
 import gallery_img_4 from "./images/gallery_img_4.jpg";
+import one from './images/strivewithpride/1.jpg'
+import two from './images/strivewithpride/2.jpg'
+import three from './images/strivewithpride/3.jpg'
+import four from './images/strivewithpride/4.jpg'
+import five from './images/strivewithpride/5.jpg'
+
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -41,7 +47,7 @@ const StriveWithPride = () => {
             </div>
             <section className="section3">
               <div className="section-img">
-                <img className=" rounded m-2" src={gallery_img_4} alt="" />
+                <img className=" rounded m-2" src={one} alt="" />
               </div>
               <div className="content3 m-2 p-5">
               Our initiative Strive With Pride helps the transgender community with necessities such as ration, clothes, and blankets. Sharva Foundation’s aim is not to provide only tangible items but to encourage society as a whole to be inclusive of transgenders, who are often excluded from the social landscape . 
@@ -60,7 +66,7 @@ const StriveWithPride = () => {
                 autoPlay="true"
                 margin={65}
               >
-                <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />
+                <img className=" rounded m-2" src={one} alt="" />            <img className=" rounded m-2" src={two} alt="" />            <img className=" rounded m-2" src={four} alt="" />            <img className=" rounded m-2" src={five} alt="" />            <img className=" rounded m-2" src={three} alt="" />
     
               </OwlCarousel>
             </section>

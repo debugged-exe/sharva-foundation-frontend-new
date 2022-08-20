@@ -1,6 +1,12 @@
 import React from 'react'
 import gallery_img_4 from "./images/gallery_img_4.jpg";
 import OwlCarousel from "react-owl-carousel";
+import one from './images/projectgreen/1.jpg';
+import two from './images/projectgreen/2.jpg';
+import three from './images/projectgreen/3.jpg';
+import four from './images/projectgreen/4.jpg';
+import five from './images/projectgreen/5.jpg';
+import six from './images/projectgreen/6.jpg';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const ProjectGreen = () => {
@@ -43,7 +49,7 @@ Mother nature defines our existence not the other way around. Our ancestors pres
             </div>
             <section className="section3">
               <div className="section-img">
-                <img className=" rounded m-2" src={gallery_img_4} alt="" />
+                <img className=" rounded m-2" src={four} alt="" />
               </div>
               <div className="content3 m-2 p-5">
               Sharva Foundation’s Impact <br />
@@ -67,7 +73,7 @@ Mother nature defines our existence not the other way around. Our ancestors pres
                 autoPlay="true"
                 margin={65}
               >
-                <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />            <img className=" rounded m-2" src={gallery_img_4} alt="" />
+                <img className=" rounded m-2" src={one} alt="" />            <img className=" rounded m-2" src={three} alt="" />            <img className=" rounded m-2" src={two} alt="" />            <img className=" rounded m-2" src={five} alt="" />            <img className=" rounded m-2" src={six} alt="" />
     
               </OwlCarousel>
             </section>

@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
-import sharva_logo from "./images/sharva-logo.png";
-
+import sharva_logo_black from "./images/sharva-logo.png";
+import sharva_logo_white from "./images/sharvawhitelogo.png";
 import "./CSS/navbar.css";
 import { Link } from "react-router-dom";
 const Navbar = () => {
   const [navColor, setnavColor] = useState("transparent");
   const [textColor, settextColor] = useState("#fefefe");
   const [shadow, setShadow] = useState("");
-
+const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
   const listenScrollEvent = () => {
     window.scrollY > 20 ? setnavColor("#fefefe") : setnavColor("transparent");
     window.scrollY > 20 ? settextColor("#151515") : settextColor("#fefefe");
-    window.scrollY > 20 ? setShadow("shadow-lg") : setShadow("");
+    window.scrollY > 20 ? setShadow("shadow-lg") : setShadow(""); window.scrollY > 20 ? setsharvaLogo(sharva_logo_black) : setsharvaLogo(sharva_logo_white);
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -37,7 +37,7 @@ const Navbar = () => {
             data-target=".navbar-collapse.show"
           >
             <img
-              src={sharva_logo}
+              src={sharvaLogo}
               className="mx-3 sharva-logo"
               width="80px"
               alt=""

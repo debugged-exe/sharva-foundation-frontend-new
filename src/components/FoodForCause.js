@@ -1,4 +1,11 @@
 import React from "react";
+import './CSS/initiatives.css'
+import one from './images/foodforcause/1.jpg'
+import two from './images/foodforcause/2.jpg'
+import three from './images/foodforcause/3.jpg'
+import four from './images/foodforcause/4.jpg'
+import six from './images/foodforcause/6.jpg'
+import seven from './images/foodforcause/7.jpg'
 import gallery_img_4 from "./images/gallery_img_4.jpg";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -47,7 +54,7 @@ const FoodForCause = () => {
         </div>
         <section className="section3">
           <div className="section-img">
-            <img className=" rounded m-2" src={gallery_img_4} alt="" />
+            <img className=" rounded m-2" src={one} alt="" />
           </div>
           <div className="content3 m-2 p-5">
           Sharva Foundation’s Impact <br />
@@ -73,12 +80,26 @@ A thankyou smile that draws on the face of everyone who collects food is pricele
             loop
             autoPlay="true"
             margin={65}
-          >
-            <img className=" rounded m-2" src={gallery_img_4} alt="" />{" "}
-            <img className=" rounded m-2" src={gallery_img_4} alt="" />{" "}
-            <img className=" rounded m-2" src={gallery_img_4} alt="" />{" "}
-            <img className=" rounded m-2" src={gallery_img_4} alt="" />{" "}
-            <img className=" rounded m-2" src={gallery_img_4} alt="" />
+          ><div className="food-carousel">
+            <img className=" rounded m-2" src={two} alt="" />{" "}
+
+          </div>
+          <div className="food-carousel">
+            <img className=" rounded m-2" src={three} alt="" />{" "}
+
+          </div>
+          <div className="food-carousel">
+            <img className=" rounded m-2" src={four} alt="" />{" "}
+
+          </div>
+          <div className="food-carousel">
+
+            <img className=" rounded m-2" src={seven} alt="" />{" "}
+          </div>
+          <div className="food-carousel">
+
+            <img className=" rounded m-2" src={six} alt="" />
+          </div>
           </OwlCarousel>
         
         </section>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./CSS/joinus.css";import "./CSS/home.css";
+import "./CSS/joinus.css";
+import "./CSS/home.css";
 import donation_card_1 from "./images/donation_card_2.jpg";
 import donation_card_2 from "./images/donation_card_2.jpg";
 import donation_card_3 from "./images/donation_card_3.jpg";
@@ -9,152 +10,168 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const JoinUs = () => {
-  const [userData, setUserData] = useState({
-    firstname:"",
-    lastname:"",
-    email:"",
-    dob:"",
-    gender:"",
-    street_address:"",
-    state_province:"",
-    city:"",
-    zip_code:"",
-    blood_grp:"",
-    current_city:"",
-    category:[],
-    reason_to_join:"",
-  });
+  // const [categoryData, setCategoryData] = useState(
+  //   {
+  //     fieldWork: false,
+  //     photography: false,
+  //     videoEditor: false,
+  //     contentWriting: false,
+  //     FundRaising: false,
+  //     creatives: false,
+  //     awarenessSessions: false,
+  //     marketing: false,
+  //     graphicDesigning: false,
+  //     strategiesBulding:false
+  //   },
+  // );
+  // const [userData, setUserData] = useState({
+  //   firstname: "",
+  //   lastname: "",
+  //   email: "",
+  //   dob: "",
+  //   gender: "",
+  //   street_address: "",
+  //   state_province: "",
+  //   city: "",
+  //   zip_code: "",
+  //   blood_grp: "",
+  //   current_city: "",
+  //   category: [],
+  //   reason_to_join: "",
+  // });
 
-  const handleInputs = (e) => {
-    const { name, value } = e.target;
+  // const handleInputs = (e) => {
+  //   const { name, value } = e.target;
 
-    setUserData({
-      ...userData,
-      [name]: value,
-    });
-    console.log(value)
-  };
-  const [category, setCategory] = useState([])
-  const [categoryFlag, setCategoryFlag] = useState(false)
-  const [categoryErr, setCategoryErr] = useState('')
+  //   setUserData({
+  //     ...userData,
+  //     [name]: value,
+  //   });
+  //   console.log(value);
+  // };
+  // const [category, setCategory] = useState([]);
+  // const [categoryFlag, setCategoryFlag] = useState(false);
+  // const [categoryErr, setCategoryErr] = useState("");
 
-  const addCategory = (event) => {
-    const {checked, value} = event.target;
-    if (checked) {
-      const arr = value;
-      category.push(arr);
-      setCategoryFlag(true);
-      setCategoryErr('');
-    }
-    else
-    {
-      const index = category.indexOf(value)
-      if (index > -1) {
-        category.splice(index, 1)
-        if(category.length===0)
-        {
-          setCategoryFlag(false);
-        }
-      }
-    }
-  }
+  // const handleChange = (e) => {
+  //   const {checked, value} = e.target;
+  //   if (checked) {
+  //     const arr = value;
+  //     category.push(arr);
+  //     setCategoryFlag(true);
+  //     setCategoryErr('');
+  //   }
+  //   else
+  //   {
+  //     const index = category.indexOf(value)
+  //     if (index > -1) {
+  //       category.splice(index, 1)
+  //       if(category.length===0)
+  //       {
+  //         setCategoryFlag(false);
+  //       }
+  //     }
+  //   }
+  // }
 
-  const categoryValidate = () => {
-    if(categoryFlag===false)
-    {
-      setCategoryErr('Mention atleast one category you want to work in.')
-    }
-  }
 
+//   const handleChange = (e) => {
+//  var {value , checked} = e.target
+//     setCategoryData((e)=>{
+//       var selectedCat= e;
+//       console.log(selectedCat.value)   
+//          return selectedCat[value]=checked;
+//     })
+ 
+
+//   };
   // const URL = 'https://sharva-backend.herokuapp.com/'
-  const URL  = 'http://localhost:5000'
-  const feedbackform = async (e) => {
-    e.preventDefault();
-    const {
-      firstname,
-      lastname,
-      email,
-      dob,
-      gender,
-      street_address,
-      state_province,
-      city,
-      zip_code,
-      blood_grp,
-      current_city,
-      category,
-      reason_to_join,
-    } = userData;
-    try {
-      const res = await fetch(
-        `${URL}post-joinus`,
-        {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify({
-            firstname:firstname,
-            lastname:lastname,
-            email:email,
-            dob:dob,
-            gender:gender,
-            street_address:street_address,
-            state_province:state_province,
-            city:city,
-            zip_code:zip_code,
-            blood_grp:blood_grp,
-            current_city:current_city,
-            category:category,
-            reason_to_join:reason_to_join,
-          }),
-        }
-      );
+  // const URL = "http://localhost:5000";
+  // const feedbackform = async (e) => {
+  //   e.preventDefault();
+  //   const {
+  //     firstname,
+  //     lastname,
+  //     email,
+  //     dob,
+  //     gender,
+  //     street_address,
+  //     state_province,
+  //     city,
+  //     zip_code,
+  //     blood_grp,
+  //     current_city,
+  //     category,
+  //     reason_to_join,
+  //   } = userData;
+  //   try {
+  //     const res = await fetch(`${URL}post-joinus`, {
+  //       method: "POST",
+  //       headers: {
+  //         "content-type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         firstname: firstname,
+  //         lastname: lastname,
+  //         email: email,
+  //         dob: dob,
+  //         gender: gender,
+  //         street_address: street_address,
+  //         state_province: state_province,
+  //         city: city,
+  //         zip_code: zip_code,
+  //         blood_grp: blood_grp,
+  //         current_city: current_city,
+  //         category: category,
+  //         reason_to_join: reason_to_join,
+  //       }),
+  //     });
 
-      const data = await res.json();
-      console.log(data);
-      if (data === "") {
-        console.log("msg not sent");
-      } else {
-        alert("message sent");
-        setUserData({
-          ...userData,
-          firstname: "",
-          lastname: "",
-          email: "",
-          dob: "",
-          gender: "",
-          street_address: "",
-          state_province: "",
-          city: "",
-          zip_code: "",
-          blood_grp: "",
-          current_city: "",
-          category:[],
-          reason_to_join: "",
-        });
-      }
-      setUserData({
-        ...userData,
-        firstname: userData.firstname,
-        lastname: userData.lastname,
-        email: userData.email,
-        dob: userData.dob,
-        gender: userData.gender,
-        street_address: userData.street_address,
-        state_province: userData.state_province,
-        city: userData.city,
-        zip_code: userData.zip_code,
-        blood_grp: userData.blood_grp,
-        current_city: userData.current_city,
-        category: userData.category,
-        reason_to_join: userData.reason_to_join,
-      });
-    } catch (err) {
-      console.log(err);
-      alert("this email already exist");
-    }
-  };
+  //     const data = await res.json();
+  //     console.log(data);
+  //     if (data === "") {
+  //       console.log("msg not sent");
+  //     } else {
+  //       alert("message sent");
+  //       setUserData({
+  //         ...userData,
+  //         firstname: "",
+  //         lastname: "",
+  //         email: "",
+  //         dob: "",
+  //         gender: "",
+  //         street_address: "",
+  //         state_province: "",
+  //         city: "",
+  //         zip_code: "",
+  //         blood_grp: "",
+  //         current_city: "",
+  //         category: [],
+  //         reason_to_join: "",
+  //       });
+  //     }
+  //     setUserData({
+  //       ...userData,
+  //       firstname: userData.firstname,
+  //       lastname: userData.lastname,
+  //       email: userData.email,
+  //       dob: userData.dob,
+  //       gender: userData.gender,
+  //       street_address: userData.street_address,
+  //       state_province: userData.state_province,
+  //       city: userData.city,
+  //       zip_code: userData.zip_code,
+  //       blood_grp: userData.blood_grp,
+  //       current_city: userData.current_city,
+  //       category: userData.category,
+  //       reason_to_join: userData.reason_to_join,
+  //     });
+  //   } catch (err) {
+  //     console.log(err);
+  //     alert("this email already exist");
+  //   }
+  // };
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -184,6 +201,7 @@ const JoinUs = () => {
       },
     },
   };
+
   return (
     <div className="CheckOut justify-content-center container">
       <div className="join_background_image">
@@ -272,18 +290,22 @@ const JoinUs = () => {
                             </label>
                             <select
                               className="form-select"
-                             name="gender"
-                              defaultValue= {userData.gender}
+                              name="gender"
+                              defaultValue={userData.gender}
                               onChange={handleInputs}
                             >
-                              <option  value={"female"}>Female</option>
-                              <option  value={"male"}> Male</option>
-                              <option  value={"cis-male"}>Cis-male</option>
-                              <option  value={"cis-female"}>Cis-female</option>
-                              <option  value={"trans-male"}>Trans male</option>
-                              <option  value={"trans-female"}>Trans female</option>
-                              <option  value={"non-binary"}>Non-binary</option>
-                              <option  value={"prefer-not-to-say"}>Prefer Not to Say</option>
+                              <option value={"female"}>Female</option>
+                              <option value={"male"}> Male</option>
+                              <option value={"cis-male"}>Cis-male</option>
+                              <option value={"cis-female"}>Cis-female</option>
+                              <option value={"trans-male"}>Trans male</option>
+                              <option value={"trans-female"}>
+                                Trans female
+                              </option>
+                              <option value={"non-binary"}>Non-binary</option>
+                              <option value={"prefer-not-to-say"}>
+                                Prefer Not to Say
+                              </option>
                             </select>
                           </div>
                         </div>
@@ -366,15 +388,14 @@ const JoinUs = () => {
                               onChange={handleInputs}
                               placeholder="select and option"
                             >
-                              
-                              <option value={"A+"} > A+</option>
-                              <option value={"A-"} >A-</option>
-                              <option value={"B+"} >B+</option>
-                              <option value={"B-"} >B-</option>
-                              <option value={"AB+"} >AB+</option>
-                              <option value={"AB-"} >AB-</option>
-                              <option value={"O+"} >O+</option>
-                              <option value={"O-"} >O-</option>
+                              <option value={"A+"}> A+</option>
+                              <option value={"A-"}>A-</option>
+                              <option value={"B+"}>B+</option>
+                              <option value={"B-"}>B-</option>
+                              <option value={"AB+"}>AB+</option>
+                              <option value={"AB-"}>AB-</option>
+                              <option value={"O+"}>O+</option>
+                              <option value={"O-"}>O-</option>
                             </select>
                           </div>
                         </div>
@@ -406,7 +427,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"field-work"} name="category" onClick={addCategory()} 
+                                    value="field-work"
+                                    name="Field Work"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -425,7 +448,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"photography"} name="category" onClick={addCategory()} 
+                                    value="photography"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -444,7 +469,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"video-editor"} name="category" onClick={addCategory()} 
+                                    value="video-editor"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -463,7 +490,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"content-writing"} name="category" onClick={addCategory()} 
+                                    value="content-writing"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -482,7 +511,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"fund-raising"} name="category" onClick={addCategory()} 
+                                    value="fund-raising"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -501,7 +532,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"creatives"} name="category" onClick={addCategory()} 
+                                    value="creatives"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -520,7 +553,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"awareness-sessions"} name="category" onClick={addCategory()} 
+                                    value="awareness-sessions"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -539,7 +574,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"marketing"} name="category" onClick={addCategory()} 
+                                    value="marketing"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -558,7 +595,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"graphic-designing"} name="category" onClick={addCategory()} 
+                                    value="graphic-designing"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -577,7 +616,9 @@ const JoinUs = () => {
                                   <input
                                     className="form-check-input mt-0"
                                     type="checkbox"
-                                    value={"strategies-buildup"} name="category" onClick={addCategory()} 
+                                    value="strategies-buildup"
+                                    name="category"
+                                    onChange={(e)=>handleChange(e)}
                                     aria-label="Checkbox for following text input"
                                   />
                                 </div>
@@ -691,7 +732,6 @@ const JoinUs = () => {
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
