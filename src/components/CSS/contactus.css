@@ -63,9 +63,9 @@ height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-image: linear-gradient(to top, #000000db, #000000c7), url("https://www.bluleadz.com/hubfs/Contact%20Us%20Graphic-241715-edited.png ")  ;
+    background-image: linear-gradient(to top, #000000db, #000000c7), url("../images/contactus.jpg")  ;
 
-    background-position:center;
+    background-position:top;
   background-size: cover;
   background-repeat: no-repeat;
 }

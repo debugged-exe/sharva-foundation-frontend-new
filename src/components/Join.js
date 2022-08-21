@@ -1,11 +1,7 @@
 import React from "react";
 
 import "./CSS/joinus.css";
-import donation_card_1 from "./images/donation_card_2.jpg";
-import donation_card_2 from "./images/donation_card_2.jpg";
-import donation_card_3 from "./images/donation_card_3.jpg";
-import donation_card_4 from "./images/donation_card_4.jpg";
-import donation_card_5 from "./images/donation_card_5.png";
+
 import joinus from "./images/joinus.jpg";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";

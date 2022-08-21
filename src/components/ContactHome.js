@@ -75,7 +75,7 @@ const ContactHome = () => {
     }
   };
   return (
-    <div className="contactus_footer">
+    <div className="contactus_footer ">
 
       <div className="line_for_heading"></div>
       <div className="map m-0 d-flex contact_us">  

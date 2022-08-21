@@ -218,4 +218,12 @@ height: 150px;
   color: #fff;
   text-align: center;
 }
+.checkout-wrapper {
+  height: 600px;
+  width: 100%;
+
+}
+.volenteer-img {
+  width: 100%;
+}
 }

@@ -601,7 +601,7 @@ html {
   width: 100%;
   border: 0px;
   margin: 5px;
-  padding: 5px;
+  padding: 5px !important;
 
   background-color: #7c7b7928;
 }
@@ -635,7 +635,8 @@ input:-webkit-autofill:active  {
 }
 .contact-us .contact_us_form textarea {
   width: 90%;
-  margin: 15px;
+  margin: 10px;
+  margin-top: 0px;
   border: 0px;
 
   padding: 12px;
@@ -914,6 +915,15 @@ figure {
     display: flex;
     margin: 5px;
   }
+  .contact-us .contact_us_form textarea {
+    width: 95%;
+    margin: 10px;
+    margin-top: 0px;
+    border: 0px;
+  
+    padding: 12px;
+    background-color: #7c7b7928;
+  }
   .inside_counter span {
     width: 0px;
     height: 50%;
@@ -957,6 +967,12 @@ figure {
     align-items: center;
     height: 100%;
   }
+  .map {
+    flex-direction: column;
+    width: 100%;
+    }.input_box_1 {
+        flex-direction: column;
+        }
   /* .gallery_section_img img {
     width: 0%;
   } */
@@ -1091,7 +1107,7 @@ figure {
   .map_image,
   .map_image_box {
     width: 100%;
-    height: 50vh;
+    /* height: 50vh; */
     margin: 0;
   }
   .sharva-map {
@@ -1101,13 +1117,13 @@ figure {
     font-size: 15px;
   }
   .img_content {
-    width: 80%;
+    width: 97%;
   }
   .form {
-    width: 95%;
-    margin: auto;
+    width: 100%;
+margin: 0 !important;
     justify-content: center;
-    margin: auto;
+
   }
   .image_about img {
     width: 100%;
@@ -1126,11 +1142,26 @@ figure {
   }
   .for_mobile_view {
     display: flex;
-    flex-direction: row;
+    flex-direction: row !important;
   }
+  .counter_section .heading_for_counter .line {
+    width:70%;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1.2px;
+    margin-bottom: 25px;
+}
+.gradient_for_donation_card .line {
+  width: 95%;
+  margin: 5px;
+  border-width: 1px;
+  margin-bottom: 25px;
+}
   .my_account,
   .main_Feature {
-    width: 50%;
+    width: 50% !important;
   }
   .my_account h5,
   .main_Feature h5 {
@@ -1209,6 +1240,19 @@ figure {
     text-align: center;
     font-size: 35px;
     color: #ff9100 !important;
+}
+.heading_contact .text-dark {
+  text-align: justify;
+  padding: 0px !important;
+}
+.contact-us .contact_us_form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 !important;
+  margin: 10px 0px !important;
+  width: 100%;
 }
 }
 
