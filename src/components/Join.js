@@ -3,7 +3,6 @@ import React from "react";
 import "./CSS/joinus.css";
 
 import joinus from "./images/joinus.jpg";
-import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const initialState = {
@@ -45,7 +44,7 @@ class Join extends React.PureComponent {
       category,
       whyjoin,
     } = this.state;
-var URI = 'https://sharva-backend.herokuapp.com/'
+    var URI = "https://sharva-backend.herokuapp.com/";
     event.preventDefault();
     fetch(`${URI}join`, {
       method: "post",
@@ -139,7 +138,7 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                               </label>
                               <input
                                 className="inputform form_inputs"
-                                placeholder="Name"
+                                // placeholder="Name"
                                 name="name"
                                 type="text"
                                 onChange={this.handleChange}
@@ -153,8 +152,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                                 Email<span className="red f3">*</span>
                               </label>
                               <input
-                                 className="inputform form_inputs"
-                                placeholder="Email Id"
+                                className="inputform form_inputs"
+                                // placeholder="Email Id"
                                 name="email"
                                 type="email"
                                 onChange={this.handleChange}
@@ -168,8 +167,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                                 Date of Birth<span className="red f3">*</span>
                               </label>
                               <input
-                                 className="inputform form_inputs"
-                                placeholder="DOB"
+                                className="inputform form_inputs"
+                                // placeholder="DOB"
                                 name="dob"
                                 type="date"
                                 onChange={this.handleChange}
@@ -178,31 +177,31 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                             </div>
                           </div>
                           <div className="col-md-6">
-                          <div className="form-input d-flex row">
-                            <label htmlFor="email" className="title">
-                              Gender
-                            </label>
-                            <select
-                              className="form-select"
-                              name="gender"
-                              defaultValue={''}
-                              onChange={this.handleChange}
-                            >
-                              <option value={"female"}>Female</option>
-                              <option value={"male"}> Male</option>
-                              <option value={"cis-male"}>Cis-male</option>
-                              <option value={"cis-female"}>Cis-female</option>
-                              <option value={"trans-male"}>Trans male</option>
-                              <option value={"trans-female"}>
-                                Trans female
-                              </option>
-                              <option value={"non-binary"}>Non-binary</option>
-                              <option value={"prefer-not-to-say"}>
-                                Prefer Not to Say
-                              </option>
-                            </select>
+                            <div className="form-input d-flex row">
+                              <label htmlFor="email" className="title">
+                                Gender
+                              </label>
+                              <select
+                                className="form-select"
+                                name="gender"
+                                defaultValue={""}
+                                onChange={this.handleChange}
+                              >
+                                <option value={"female"}>Female</option>
+                                <option value={"male"}> Male</option>
+                                <option value={"cis-male"}>Cis-male</option>
+                                <option value={"cis-female"}>Cis-female</option>
+                                <option value={"trans-male"}>Trans male</option>
+                                <option value={"trans-female"}>
+                                  Trans female
+                                </option>
+                                <option value={"non-binary"}>Non-binary</option>
+                                <option value={"prefer-not-to-say"}>
+                                  Prefer Not to Say
+                                </option>
+                              </select>
+                            </div>
                           </div>
-                        </div>
                           {/* <div className="col-md-6">
                             <div className="form-input form-select d-flex row">
                               <label htmlFor="gender" className="label">
@@ -312,8 +311,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                                 Phone Number<span className="red f3">*</span>
                               </label>
                               <input
-                                 className="inputform form_inputs"
-                                placeholder="Phone no."
+                                className="inputform form_inputs"
+                                // placeholder="Phone no."
                                 name="phone"
                                 type="tel"
                                 pattern="[0-9]{10}"
@@ -330,8 +329,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                               </label>
                               <input
                                 name="address"
-                                 className="inputform form_inputs"
-                                placeholder="Address"
+                                className="inputform form_inputs"
+                                // placeholder="Address"
                                 onChange={this.handleChange}
                               />
                             </div>
@@ -343,8 +342,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                               </label>
                               <input
                                 name="city"
-                                 className="inputform form_inputs"
-                                placeholder="Address"
+                                className="inputform form_inputs"
+                                // placeholder="Address"
                                 onChange={this.handleChange}
                               />
                             </div>
@@ -356,8 +355,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                               </label>
                               <input
                                 name="state"
-                                 className="inputform form_inputs"
-                                placeholder="State"
+                                className="inputform form_inputs"
+                                // placeholder="State"
                                 type="text"
                                 onChange={this.handleChange}
                                 required
@@ -379,9 +378,7 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                                 onChange={this.handleChange}
                                 name="bloodgroup"
                               >
-                                <option value=" ">
-                                   select an option
-                                </option>
+                                <option value=" ">select an option</option>
                                 <option value="A+">A+</option>
                                 <option value="A-">A-</option>
                                 <option value="B+">B+</option>
@@ -400,8 +397,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                               </label>
                               <input
                                 name="currentcity"
-                                 className="inputform form_inputs"
-                                placeholder="Current City"
+                                className="inputform form_inputs"
+                                // placeholder="Current City"
                                 type="text"
                                 onChange={this.handleChange}
                                 required
@@ -419,7 +416,8 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="bank"
                                       name="category"
@@ -427,65 +425,82 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                                       onClick={this.handleCheck}
                                       aria-label="Checkbox for following text input"
                                     />
-                                   
-                                    <label className="form-control" for="bank">Field Work</label>
-                                  </div>
 
+                                    <label className="form-control" for="bank">
+                                      Field Work
+                                    </label>
+                                  </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="mutual"
                                       name="category"
                                       value="photography"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="mutual">Photography</label>
+                                    <label
+                                      className="form-control"
+                                      for="mutual"
+                                    >
+                                      Photography
+                                    </label>
                                   </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="bonds"
                                       name="category"
                                       value="videoeditor"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="bonds">Video Editor</label>
+                                    <label className="form-control" for="bonds">
+                                      Video Editor
+                                    </label>
                                   </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="post"
                                       name="category"
                                       value="contentwriting"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="post">Content Writing</label>{" "}
+                                    <label className="form-control" for="post">
+                                      Content Writing
+                                    </label>{" "}
                                   </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="money_market"
                                       name="category"
                                       value="fundraising"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="money_market">
+                                    <label
+                                      className="form-control"
+                                      for="money_market"
+                                    >
                                       Fund Raising
                                     </label>
                                   </div>
@@ -494,93 +509,129 @@ var URI = 'https://sharva-backend.herokuapp.com/'
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="debt"
                                       name="category"
                                       value="creatives"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="debt">Creatives</label>
+                                    <label className="form-control" for="debt">
+                                      Creatives
+                                    </label>
                                   </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="none"
                                       name="category"
                                       value="awareness"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="none">Awareness Sessions</label>
+                                    <label className="form-control" for="none">
+                                      Awareness Sessions
+                                    </label>
                                   </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="none"
                                       name="category"
                                       value="marketing"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="none">Marketing</label>
+                                    <label className="form-control" for="none">
+                                      Marketing
+                                    </label>
                                   </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="none"
                                       name="category"
                                       value="marketing"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="none">Graphic Designing</label>{" "}
+                                    <label className="form-control" for="none">
+                                      Graphic Designing
+                                    </label>{" "}
                                   </div>
                                 </div>
                               </div>
                               <div className="checkbox1    ">
                                 <div className="input-group mb-3">
                                   <div className="input-group-text">
-                                    <input className="form-check-input mt-0 " 
+                                    <input
+                                      className="form-check-input mt-0 "
                                       type="checkbox"
                                       id="none"
                                       name="category"
                                       value="strategies"
                                       onClick={this.handleCheck}
                                     />
-                                    <label className='form-control' for="none">Strategies Buildup</label>
+                                    <label className="form-control" for="none">
+                                      Strategies Buildup
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div className="checkbox1    ">
+                                <div className="input-group mb-3">
+                                  <div className="input-group-text">
+                                    <input
+                                      className="form-check-input mt-0 "
+                                      type="checkbox"
+                                      id="none"
+                                      name="category"
+                                      value="volenteer"
+                                      onClick={this.handleCheck}
+                                    />
+                                    <label className="form-control" for="none">
+                                      Volenteer
+                                    </label>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            
                           </div>
                           <div className="col-md-12">
-                              <div className="form-input d-flex row">
-                                <label for="edu" className="label">
-                                  Why do you want to Join Us?
-                                  <span className="red f3">*</span>
-                                </label>
-                                <textarea
-                                  type="text"
-                                  name="whyjoin"
-                                   className="inputform form_inputs"
-                                  placeholder=""
-                                  onChange={this.handleChange}
-                                />
-                              </div>
+                            <div className="form-input d-flex row">
+                              <label for="edu" className="label">
+                                Why do you want to Join Us?
+                                <span className="red f3">*</span>
+                              </label>
+                              <textarea
+                                type="text"
+                                name="whyjoin"
+                                className="inputform form_inputs"
+                                // placeholder=""
+                                onChange={this.handleChange}
+                              />
                             </div>
+                          </div>
                           <div className="col-md-12 inputBoxJoinUs">
-                            <input type="Submit" className="gradient_btn btn btn-sm btn-warning col-md-6" name="" value="Submit"></input>
+                            <input
+                              type="Submit"
+                              className="gradient_btn btn btn-sm btn-warning col-md-6"
+                              name=""
+                              value="Submit"
+                            ></input>
                           </div>
                         </div>
                       </div>
@@ -591,8 +642,9 @@ var URI = 'https://sharva-backend.herokuapp.com/'
             </div>
             {/* <!-- Checkout Form --> */}
           </div>
-          <div className="volenteer-img"><img src={joinus} alt="" /></div>
-         
+          <div className="volenteer-img">
+            <img src={joinus} alt="" />
+          </div>
         </div>
       </div>
     );

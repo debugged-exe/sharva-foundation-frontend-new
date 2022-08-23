@@ -1,16 +1,19 @@
-import React from "react";
-import './CSS/initiatives.css'
-import one from './images/foodforcause/1.jpg'
-import two from './images/foodforcause/2.jpg'
-import three from './images/foodforcause/3.jpg'
-import four from './images/foodforcause/4.jpg'
-import six from './images/foodforcause/6.jpg'
-import seven from './images/foodforcause/7.jpg'
-import gallery_img_4 from "./images/gallery_img_4.jpg";
+import React,{useEffect} from "react";
+import './CSS/initiatives.css';
+import one from './images/foodforcause/1.jpg';
+import two from './images/foodforcause/2.jpg';
+import three from './images/foodforcause/3.jpg';
+import four from './images/foodforcause/4.jpg';
+import six from './images/foodforcause/6.jpg';
+import seven from './images/foodforcause/7.jpg';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const FoodForCause = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+   
+  }, []);
   const options = {
     margin: 30,
     responsiveClass: true,

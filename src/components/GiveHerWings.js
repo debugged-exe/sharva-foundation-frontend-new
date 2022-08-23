@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import gallery_img_4 from "./images/gallery_img_4.jpg";
 import OwlCarousel from "react-owl-carousel";
 import one from "./images/giveherwings/1.jpg";
@@ -11,6 +11,10 @@ import six from "./images/giveherwings/6.jpg";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const GiveHerWings = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+   
+  }, []);
   const options = {
     margin: 30,
     responsiveClass: true,

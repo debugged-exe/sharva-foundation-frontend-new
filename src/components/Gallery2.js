@@ -1,15 +1,14 @@
 import React from "react";
-import gallery_img_1 from "./images/strive.jpg";
+import gallery_img_1 from "./images/strivewithpride/3.jpg";
 import gallery_img_2 from "./images/gallery_img_2.jpg";
-import gallery_img_3 from "./images/gallery_img_3.jpg";
-
+import gallery_img_3 from "./images/giveherwings/1.jpg";
 import gallery_img_4 from "./images/gallery.jpg";
 import gallery_img_5 from "./images/gallery_img_5.jpg";
-import gallery_img_6 from "./images/gallery_img_6.jpg";
+import gallery_img_6 from "./images/blooddonation/4.jpg";
 import gallery_img_7 from "./images/ppkit.jpg";
-import gallery_img_8 from "./images/gallery_img_8.jpg";
+import gallery_img_8 from "./images/projectgreen/2.jpg";
 import gallery_img_9 from "./images/gallery_img_9.jpg";
-import gallery_img_10 from "./images/gallery_img_10.jpg";
+import gallery_img_10 from "./images/blooddonation/1.jpg";
 import gallery_img_11 from "./images/gallery_img_11.jpg";
 import gallery_img_12 from "./images/gallery_img_12.jpg";
 const Gallery2 = () => {

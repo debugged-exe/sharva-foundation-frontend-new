@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import one from "./images/blooddonation/1.jpg";
 import two from "./images/blooddonation/2.jpg";
 import three from "./images/blooddonation/3.jpg";
@@ -9,6 +9,10 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const BloodDonation = () => {
+   useEffect(() => {
+  window.scrollTo(0, 0);
+ 
+}, []);
   const options = {
     margin: 30,
     responsiveClass: true,

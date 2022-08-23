@@ -1,5 +1,5 @@
-import React from 'react'
-import gallery_img_4 from "./images/gallery_img_4.jpg";
+import React,{useEffect} from 'react'
+
 import OwlCarousel from "react-owl-carousel";
 import one from './images/projectgreen/1.jpg';
 import two from './images/projectgreen/2.jpg';
@@ -10,6 +10,10 @@ import six from './images/projectgreen/6.jpg';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const ProjectGreen = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+   
+  }, []);
     const options = {
         margin: 30,
         responsiveClass: true,

@@ -800,11 +800,11 @@ footer .line {
   margin: 15px;
 }
 .footer_section_2 li {
-  margin: 20px 15px;
+  margin: 10px 15px;
   text-align: left;
 }
 .main_Feature ul {
-  margin: 0px;
+  margin: 20px;
 
   padding: 0;
 }
@@ -966,6 +966,9 @@ figure {
     justify-content: center;
     align-items: center;
     height: 100%;
+  }
+  .join_us .content .gradient_btn{
+    padding: 5px !important;
   }
   .map {
     flex-direction: column;
@@ -1183,8 +1186,11 @@ margin: 0 !important;
     margin: 5px;
   }
   .main_Feature ul {
+    padding: 1px;
     padding-left: 5px;
+
     display: flex;
+    margin: 5px;
     flex-direction: column;
 
     list-style-type: none;
