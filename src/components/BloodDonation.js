@@ -13,6 +13,13 @@ const BloodDonation = () => {
   window.scrollTo(0, 0);
  
 }, []);
+const styles = {
+    
+
+       
+  backgroundImage: `linear-gradient(to top, #0000006e, #00000077), url(${two})  `
+
+};
   const options = {
     margin: 30,
     responsiveClass: true,
@@ -41,7 +48,7 @@ const BloodDonation = () => {
   };
   return (
     <div className="initiatives">
-      <div className="intiative_background_image">
+      <div style={styles} className="intiative_background_image">
         <h1 className="intiative-heading carousel-caption">
           Blood Donation <h4>Gift Of Life!</h4>
         </h1>

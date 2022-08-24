@@ -1,5 +1,5 @@
-import React from 'react'
-import gallery_img_4 from "./images/gallery_img_4.jpg";
+import React,{useEffect} from 'react'
+
 import one from './images/strivewithpride/1.jpg'
 import two from './images/strivewithpride/2.jpg'
 import three from './images/strivewithpride/3.jpg'
@@ -10,6 +10,14 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const StriveWithPride = () => {
+  
+   useEffect(() => {
+  window.scrollTo(0, 0);
+ 
+}, []);
+  const styles = {
+    backgroundImage: `linear-gradient(to top, #0000006e, #00000077), url(${four})  `,
+  };
     const options = {
         margin: 30,
         responsiveClass: true,
@@ -38,7 +46,7 @@ const StriveWithPride = () => {
       };
       return (
         <div className="initiatives">
-          <div className="intiative_background_image">
+          <div style={styles} className="intiative_background_image">
             <h1 className="intiative-heading carousel-caption">Strive With Pride <h4>Inclusivity For All!</h4> </h1>
           </div>
           <div className="container ">

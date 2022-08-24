@@ -61,7 +61,7 @@ const DonationCard = (props) => {
              alt="error"
             />
             <div className="card-body">
-              <h5 className="card-title text-white">One by everyone</h5>
+              <h5 className="card-title text-white">Rupee One Campaign</h5>
               <p className="card-text text-white">
               
 Have you ever heard of the proverb ”little drops make the mighty ocean”? With this campaign, we are trying to pursue just that. We believe that if even only one rupee contribution is made by a large mass, it can help us to proactively offer help for any cause or tragedies due to an uncalled situation.
