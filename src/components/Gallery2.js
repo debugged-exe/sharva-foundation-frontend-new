@@ -1,5 +1,6 @@
 import React from "react";
 import gallery_img_1 from "./images/strivewithpride/3.jpg";
+
 import gallery_img_2 from "./images/gallery_img_2.jpg";
 import gallery_img_3 from "./images/giveherwings/1.jpg";
 import gallery_img_4 from "./images/gallery.jpg";
@@ -11,6 +12,7 @@ import gallery_img_9 from "./images/gallery_img_9.jpg";
 import gallery_img_10 from "./images/blooddonation/1.jpg";
 import gallery_img_11 from "./images/gallery_img_11.jpg";
 import gallery_img_12 from "./images/gallery_img_12.jpg";
+import { Link } from "react-router-dom";
 const Gallery2 = () => {
   return (
     <div>
@@ -21,7 +23,7 @@ const Gallery2 = () => {
 
       <div className="gallery">
         <div className="gallery__column">
-          <a href={gallery_img_1} className="gallery__link">
+          <Link to='/strivewithpride' className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_1}
@@ -29,9 +31,9 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
 
-          <a href="https://unsplash.com/@oladimeg" className="gallery__link">
+          <Link to="/foodforcause" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_2}
@@ -39,8 +41,8 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
-          <a href="https://unsplash.com/@von_co" className="gallery__link">
+          </Link>
+          <Link to='/giveherwings' className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_3}
@@ -48,11 +50,11 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
         </div>
 
         <div className="gallery__column">
-          <a href="https://unsplash.com/@noahbuscher" className="gallery__link">
+          <Link to="/projectgreen" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_4}
@@ -60,9 +62,9 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
 
-          <a href="https://unsplash.com/@von_co" className="gallery__link">
+          <Link to="/blooddonation" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_6}
@@ -70,8 +72,8 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
-          <a href="https://unsplash.com/@von_co" className="gallery__link">
+          </Link>
+          <Link to="/foodforcause" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_5}
@@ -79,11 +81,11 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
         </div>
 
         <div className="gallery__column">
-          <a href="https://unsplash.com/@marilezhava" className="gallery__link">
+          <Link to="/foodforcause" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_7}
@@ -91,9 +93,9 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
 
-          <a href="https://unsplash.com/@ethanhaddox" className="gallery__link">
+          <Link to="/projectgreen" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_8}
@@ -101,8 +103,8 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
-          <a href="https://unsplash.com/@von_co" className="gallery__link">
+          </Link>
+          <Link to="/foodforcause" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_9}
@@ -110,11 +112,11 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
         </div>
 
         <div className="gallery__column">
-          <a href="https://unsplash.com/@frxgui" className="gallery__link">
+          <Link  to="/blooddonation" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_10}
@@ -122,10 +124,10 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
 
-          <a
-            href="https://unsplash.com/@majestical_jasmin"
+          <Link
+            to="/foodforcause"
             className="gallery__link"
           >
             <figure className="gallery__thumb">
@@ -135,8 +137,8 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
-          <a href="https://unsplash.com/@von_co" className="gallery__link">
+          </Link>
+          <Link to="foodforcause" className="gallery__link">
             <figure className="gallery__thumb">
               <img
                 src={gallery_img_12}
@@ -144,7 +146,7 @@ const Gallery2 = () => {
                 className="gallery__image"
               />
             </figure>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

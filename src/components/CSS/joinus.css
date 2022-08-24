@@ -201,6 +201,7 @@ height: 150px;
 .CheckOut .submitbutton{
   width: 100%;
   display: flex;
+  margin: 10px;
   justify-content: center;
 }
 .CheckOut .owl-theme {

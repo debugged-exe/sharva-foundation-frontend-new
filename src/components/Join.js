@@ -628,7 +628,7 @@ class Join extends React.PureComponent {
                           <div className="col-md-12 inputBoxJoinUs">
                             <input
                               type="Submit"
-                              className="gradient_btn btn btn-sm btn-warning col-md-6"
+                              className=" m-2 gradient_btn btn btn-sm btn-warning col-md-6 submitbutton"
                               name=""
                               value="Submit"
                             ></input>
