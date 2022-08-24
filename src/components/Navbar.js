@@ -142,7 +142,7 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                     transition: "all 0.5s",
                     color: textColor,
                   }}
-                  href="https://nimble-pudding-8b267a.netlify.app/#AboutUs"
+                  href="/#AboutUs"
                 >
                   COVID 19
                 </a>
@@ -158,7 +158,7 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                     transition: "all 0.5s",
                     color: textColor,
                   }}
-                  href="https://nimble-pudding-8b267a.netlify.app/#AboutUs"
+                  href="/#AboutUs"
                 >
                   ABOUT US
                 </a>

@@ -65,22 +65,23 @@ const Footer = () => {
                 <div className="my_account">
                   <h5>OUR INITIATIVES</h5>
                   <ul>
-                    <li>food for cause</li>
-                    <li>strive with pride</li>
-                    <li>give her wings to fly</li>
-                    <li>project green</li>
-                    <li>blood donation</li>
+                    <li> <Link to='/foodforcause'> food for cause</Link>
+</li>
+                    <li> <Link to='/strivewithpride'> strive with pride</Link> </li>
+                    <li> <Link to='/giveherwings'> give her wings to fly</Link> </li>
+                    <li> <Link to='/projectgreen'> project green</Link> </li>
+                    <li> <Link to='/blooddonation'> blood donation</Link> </li>
                   </ul>
                 </div>
                 <div className="main_Feature ">
                   <h5>QUICK LINKS </h5>
                   <ul>
                     <li><Link to="/">Home</Link>  </li>
-                    <li><a href=""> About Us</a></li>
-                    <li><a href=""> Our Initiatives</a></li>
+                    <li><a href="/#AboutUs"> About Us</a></li>
+                    <li><a href="/"> Our Initiatives</a></li>
                     <li><Link to="/contact-us"> Contact Us</Link></li>
                     <li><Link to="/join-us"> Join us</Link></li>
-                    <li><a href=""> Donate Now</a></li>
+                    <li><a href="https://rzp.io/l/oQlaIFYe"> Donate Now</a></li>
                   </ul>
                 </div>
               </div>

@@ -68,9 +68,14 @@ Have you ever heard of the proverb ”little drops make the mighty ocean”? Wit
 
               </p>
             </div>
-            <button className="rounded gradient_btn  btn button text-white">
-              DONATE NOW
-            </button>
+            <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
+                  <button
+                    type="button"
+                    className="gradient_btn btn btn-sm btn-warning"
+                  >
+                    DONATE NOW{" "}
+                  </button>
+                </a>
           </div>
           <div className="card bg-transparent">
             <img
@@ -104,9 +109,14 @@ Have you ever heard of the proverb ”little drops make the mighty ocean”? Wit
               Menstruation is a biological process and females, from puberty till menopause, have no control over it. With this initiative, we provide three months, six months, or a yearly stock of sanitary napkins to girls who struggle to maintain menstruation hygiene due to financial challenges or less awareness.
               </p>
             </div>
-            <button className="rounded gradient_btn  btn button text-white">
-              DONATE NOW
-            </button>
+            <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
+                  <button
+                    type="button"
+                    className="gradient_btn btn btn-sm btn-warning"
+                  >
+                    DONATE NOW{" "}
+                  </button>
+                </a>
           </div>
           <div className="card bg-transparent">
             <img
@@ -120,9 +130,14 @@ Have you ever heard of the proverb ”little drops make the mighty ocean”? Wit
               Food is the most basic necessity and still, a large population sleeps hungry and wakes up malnutrition. Since the inception of this campaign, our volunteers have completed 100+ food drives where we served cooked and packed meals to the needy.
               </p>
             </div>
-            <button className="rounded gradient_btn  btn button text-white">
-              DONATE NOW
-            </button>
+            <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
+                  <button
+                    type="button"
+                    className="gradient_btn btn btn-sm btn-warning"
+                  >
+                    DONATE NOW{" "}
+                  </button>
+                </a>
           </div>
           <div className="card bg-transparent">
             <img
@@ -140,9 +155,14 @@ Have you ever heard of the proverb ”little drops make the mighty ocean”? Wit
                 hygiene due to financial challenges or less awareness
               </p>
             </div>
-            <button className="rounded gradient_btn  btn button text-white">
-              DONATE NOW
-            </button>
+            <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
+                  <button
+                    type="button"
+                    className="gradient_btn btn btn-sm btn-warning"
+                  >
+                    DONATE NOW{" "}
+                  </button>
+                </a>
           </div>
           <div className="card bg-transparent">
             <img
@@ -160,9 +180,14 @@ Have you ever heard of the proverb ”little drops make the mighty ocean”? Wit
                 hygiene due to financial challenges or less awareness
               </p>
             </div>
-            <button className="rounded gradient_btn  btn button text-white">
-              DONATE NOW
-            </button>
+            <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
+                  <button
+                    type="button"
+                    className="gradient_btn btn btn-sm btn-warning"
+                  >
+                    DONATE NOW{" "}
+                  </button>
+                </a>
           </div>
         </OwlCarousel>
         {/* <div className="text-white carousel about_donation">
