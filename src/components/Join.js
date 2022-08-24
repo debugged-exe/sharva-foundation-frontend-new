@@ -189,13 +189,7 @@ class Join extends React.PureComponent {
                               >
                                 <option value={"female"}>Female</option>
                                 <option value={"male"}> Male</option>
-                                <option value={"cis-male"}>Cis-male</option>
-                                <option value={"cis-female"}>Cis-female</option>
-                                <option value={"trans-male"}>Trans male</option>
-                                <option value={"trans-female"}>
-                                  Trans female
-                                </option>
-                                <option value={"non-binary"}>Non-binary</option>
+                                
                                 <option value={"prefer-not-to-say"}>
                                   Prefer Not to Say
                                 </option>
@@ -599,11 +593,11 @@ class Join extends React.PureComponent {
                                       type="checkbox"
                                       id="none"
                                       name="category"
-                                      value="volenteer"
+                                      value="volunteer"
                                       onClick={this.handleCheck}
                                     />
                                     <label className="form-control" for="none">
-                                      Volenteer
+                                      Volunteer
                                     </label>
                                   </div>
                                 </div>

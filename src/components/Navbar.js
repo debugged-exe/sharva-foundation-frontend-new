@@ -176,7 +176,7 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                 </Link>
               </li>
               <li className="nav-item ">
-                <a className="nav-link  " href="/">
+                <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
                   <button
                     type="button"
                     className="gradient_btn btn btn-sm btn-warning"

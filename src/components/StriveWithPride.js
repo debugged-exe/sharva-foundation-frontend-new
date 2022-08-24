@@ -39,7 +39,7 @@ const StriveWithPride = () => {
       return (
         <div className="initiatives">
           <div className="intiative_background_image">
-            <h1 className="intiative-heading carousel-caption">Strive With Pride <h4>Inclusivity FOr All!</h4> </h1>
+            <h1 className="intiative-heading carousel-caption">Strive With Pride <h4>Inclusivity For All!</h4> </h1>
           </div>
           <div className="container ">
             <div className="content1 m-5 text-justify px-4">
