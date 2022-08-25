@@ -119,7 +119,7 @@ class Join extends React.PureComponent {
 
         <div className="checkout-content container mt-5">
           <div className="checkout-wrapper">
-            <div className="scrollbar" id="style-7">
+            <div className="scrollbar" id="style-2">
               <div className="force-overflow">
                 <form
                   className="register-form"

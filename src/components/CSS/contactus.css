@@ -28,6 +28,9 @@
     width: 840px;
 height: 100%;
 }
+.heading_contact{
+    padding: 0px 30px;
+}
 .form-input{
     display: flex;
     flex-direction: column;

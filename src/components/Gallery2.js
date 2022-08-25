@@ -42,10 +42,10 @@ const Gallery2 = () => {
               />
             </figure>
           </Link>
-          <Link to='/giveherwings' className="gallery__link">
+          <Link to='/foodforcause' className="gallery__link">
             <figure className="gallery__thumb">
               <img
-                src={gallery_img_3}
+                src={gallery_img_5}
                 alt="Portrait by Ivana Cajina"
                 className="gallery__image"
               />
@@ -73,10 +73,10 @@ const Gallery2 = () => {
               />
             </figure>
           </Link>
-          <Link to="/foodforcause" className="gallery__link">
+          <Link to="/giveherwings" className="gallery__link">
             <figure className="gallery__thumb">
               <img
-                src={gallery_img_5}
+                src={gallery_img_3}
                 alt="Portrait by Ivana Cajina"
                 className="gallery__image"
               />

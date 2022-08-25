@@ -77,8 +77,11 @@ JOIN US NOW
             applicable based on your address and it will not exceed ₹50){" "}
           </div>
           <div className="line ">
+
             <button className="bg-white  fw-bold  rounded text-yellow ">
+          <a className="text-yellow text-decoration-none" href="https://forms.gle/wZfmr8yQcQM95bE36">
               Get Your Merchandise!
+          </a>
             </button>
           </div>
         </div>
