@@ -190,11 +190,7 @@ const DonationCard = (props) => {
             <div className="card-body">
               <h5 className="card-title text-white">Voice For Voiceless</h5>
               <p className="card-text text-white">
-                Mensturation is a biological process and females , from puberty
-                till menopause , have no control over it. With this initiative,
-                we provide thress months, six months, or a yearly stock of
-                sanitary napkins to girls who struggle to maintain mensturation
-                hygiene due to financial challenges or less awareness
+              A Campaign where we distributed reflective bands to the ones in need and the main cause for this drive was to prevent fatal accidents. In addition to that, food and good quality shelter was provided for stray animals who don't have someone of their own. Funds were raised for several NGOs so that the voiceless can speak with their emotions.
               </p>
             </div>
             <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
