@@ -78,8 +78,8 @@ const styles = {
           ● Awareness programs to motivate everyone. <br />
           ● Voluntary involvement from team Sharva to help urgent cases. <br />
           Sharva Foundation’s Impact <br />
-          ● ____ cities <br />
-          ● ____ blood donation drives <br />
+      
+          ● 5 blood donation drives <br />
         </div>
 
         <section className="intiative-carousel">

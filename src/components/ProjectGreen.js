@@ -64,8 +64,8 @@ const ProjectGreen = () => {
           </div>
           <div className="content3 m-2 p-5">
             Sharva Foundation’s Impact <br />
-            ● ____ cities <br />
-            ● ___ plantation drives <br />
+            ● 6 cities <br />
+            ● 10+ plantation drives <br />
             ● 500+ trees planted <br />
           </div>
         </section>

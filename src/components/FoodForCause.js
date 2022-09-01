@@ -63,7 +63,7 @@ const FoodForCause = () => {
           Sharva Foundation’s Impact <br />
 A thankyou smile that draws on the face of everyone who collects food is priceless and keeps us on our toes to feed more and more people. Till now we have: <br />
 
-●	6____  cities, <br />
+●	6 cities, <br />
 ●	50100+ food distribution drives, <br />
 ●	1500010000+ food meals delivered. <br />
 

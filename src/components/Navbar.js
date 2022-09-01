@@ -131,7 +131,7 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                   </li>
                 </ul>
               </li>
-              <li
+              {/* <li
                 className="nav-item "
                 data-toggle="collapse"
                 data-target=".navbar-collapse.show"
@@ -146,7 +146,7 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                 >
                   COVID 19
                 </a>
-              </li>
+              </li> */}
               <li
                 className="nav-item "
                 data-toggle="collapse"
