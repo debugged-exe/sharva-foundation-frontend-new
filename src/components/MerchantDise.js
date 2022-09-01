@@ -12,7 +12,7 @@ const MerchantDise = () => {
       <div className="join_us bg-dark d-flex  justify-content-between p-3">
         <div className="content m-4 text-center mx-0  text-white w-60">
           <h4 className="text-uppercase mx-5">
-            <strong>Be part of a pan-Indian volunteer network</strong>
+            <strong>Be part of a pan-India volunteer network</strong>
           </h4>
         </div>
         <div className="button m-4  " >
