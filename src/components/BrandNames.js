@@ -13,7 +13,6 @@ import brand_10 from "./images/brand10.jpg";
 import brand_11 from "./images/brand11.jpg";
 import brand_12 from "./images/brand12.jpg";
 import brand_13 from "./images/debugged.exe_logo.png"
-
 const BrandNames = () => {
   return (
     <div><div className="brands_working_with container rounded text-dark fw-5">

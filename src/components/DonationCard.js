@@ -105,7 +105,7 @@ const DonationCard = (props) => {
               DONATE NOW
             </button>
           </div>
-          <div className="card bg-transparent">
+          {/* <div className="card bg-transparent">
             <img
               src={donation_card_3}
               className="card-img-top rounded"
@@ -131,7 +131,7 @@ const DonationCard = (props) => {
                 DONATE NOW{" "}
               </button>
             </a>
-          </div>
+          </div> */}
           <div className="card bg-transparent">
             <img
               src={donation_card_4}
@@ -163,7 +163,7 @@ const DonationCard = (props) => {
               alt="error"
             />
             <div className="card-body">
-              <h5 className="card-title text-white"> Give her Wings To Fly</h5>
+              <h5 className="card-title text-w  hite"> Give her Wings To Fly</h5>
               <p className="card-text text-white">
                 Mensturation is a biological process and females , from puberty
                 till menopause , have no control over it. With this initiative,
