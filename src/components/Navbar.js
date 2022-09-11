@@ -7,11 +7,14 @@ const Navbar = () => {
   const [navColor, setnavColor] = useState("transparent");
   const [textColor, settextColor] = useState("#fefefe");
   const [shadow, setShadow] = useState("");
-const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
+  const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white);
   const listenScrollEvent = () => {
     window.scrollY > 20 ? setnavColor("#fefefe") : setnavColor("transparent");
     window.scrollY > 20 ? settextColor("#151515") : settextColor("#fefefe");
-    window.scrollY > 20 ? setShadow("shadow-lg") : setShadow(""); window.scrollY > 20 ? setsharvaLogo(sharva_logo_black) : setsharvaLogo(sharva_logo_white);
+    window.scrollY > 20 ? setShadow("shadow-lg") : setShadow("");
+    window.scrollY > 20
+      ? setsharvaLogo(sharva_logo_black)
+      : setsharvaLogo(sharva_logo_white);
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -100,7 +103,7 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                       Strive With Pride
                     </Link>
                   </li>
-                 
+
                   <li>
                     <Link
                       data-toggle="collapse"
@@ -108,9 +111,10 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                       className="dropdown-item"
                       to="/giveherwings"
                     >
-                      Give her wings to fly 
+                      Give her wings to fly
                     </Link>
-                  </li><li>
+                  </li>
+                  <li>
                     <Link
                       data-toggle="collapse"
                       data-target=".navbar-collapse.show"
@@ -119,7 +123,8 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                     >
                       Project Green
                     </Link>
-                  </li><li>
+                  </li>
+                  <li>
                     <Link
                       data-toggle="collapse"
                       data-target=".navbar-collapse.show"
@@ -129,24 +134,45 @@ const [sharvaLogo, setsharvaLogo] = useState(sharva_logo_white)
                       Blood Donation
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse.show"
+                      className="dropdown-item"
+                      to="/voiceforvoiceless"
+                    >
+                    Voice For Voiceless 
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse.show"
+                      className="dropdown-item"
+                      to="/projectruya"
+                    >
+                      Project Ruya
+                    </Link>
+                  </li>
+                
                 </ul>
               </li>
-              {/* <li
+              <li
                 className="nav-item "
                 data-toggle="collapse"
                 data-target=".navbar-collapse.show"
               >
-                <a
+                <Link
                   className="nav-link   "
                   style={{
                     transition: "all 0.5s",
                     color: textColor,
                   }}
-                  href="/#AboutUs"
+                  to="/covid19"
                 >
-                  COVID 19
-                </a>
-              </li> */}
+                  COVID - 19
+                </Link>
+              </li>
               <li
                 className="nav-item "
                 data-toggle="collapse"

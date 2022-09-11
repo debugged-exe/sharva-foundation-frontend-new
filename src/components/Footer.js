@@ -76,7 +76,7 @@ const Footer = () => {
                 <div className="main_Feature ">
                   <h5>QUICK LINKS </h5>
                   <ul>
-                    <li><Link to="/">Home</Link>  </li>
+                    <li><a href="/">Home</a>  </li>
                     <li><a href="/#AboutUs"> About Us</a></li>
                     <li><a href="/"> Our Initiatives</a></li>
                     <li><Link to="/contact-us"> Contact Us</Link></li>

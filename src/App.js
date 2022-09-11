@@ -13,6 +13,9 @@ import ProjectGreen from "./components/ProjectGreen";
 import GiveHerWings from "./components/GiveHerWings";
 import StriveWithPride from "./components/StriveWithPride";
 import BloodDonation from "./components/BloodDonation";
+import Covid from "./components/Covid";
+import VoiceForVoiceless from "./components/VoiceForVoiceless";
+import ProjectRuya from "./components/ProjectRuya";
 
 import Join from "./components/Join";
 
@@ -29,6 +32,9 @@ function App() {
         <Route exact path="/projectgreen" element={<ProjectGreen/>} />
         <Route exact path="/blooddonation" element={<BloodDonation/>} />
         <Route exact path="/foodforcause" element={<FoodForCause/>} />
+        <Route exact path="/covid19"  element={<Covid/>} />
+        <Route exact path="/voiceforvoiceless"  element={<VoiceForVoiceless/>} />
+        <Route exact path="/projectruya"  element={<ProjectRuya/>} />
      
       </Routes>
       

@@ -49,11 +49,15 @@ const FoodForCause = () => {
         </h1>
       </div>
       <div className="container ">
-        <div className="content1 m-5 text-justify px-4">
-          Sharva Foundation’s pursuit of a society where people are not deprived
+        <div className="content1 m-5  text-justify px-4">
+          Sharva Aikayam Foundation’s pursuit of a society where people are not deprived
           of the basic necessities such as food is the motivation behind the
           initiative. Food For Cause is a continuous effort to feed the needy
           with healthy meals.
+          A non-political and non-religious organization, we are one of the few NGOs in India focusing specifically on malnutrition. The organization aims to achieve its mission to end hunger in a systematic and sustainable way.
+          The Secret to Living is Giving.
+“Only those who have learned the power of sincere & selfless contribution experience life’s deepest joy: true fulfillment.”
+TONY ROBBINS
         </div>
         <section className="section3">
           <div className="section-img">
@@ -65,7 +69,7 @@ A thankyou smile that draws on the face of everyone who collects food is pricele
 
 ●	6 cities, <br />
 ●	50100+ food distribution drives, <br />
-●	1500010000+ food meals delivered. <br />
+●	1500+ food meals delivered. <br />
 
           </div>
         </section>
@@ -103,6 +107,7 @@ A thankyou smile that draws on the face of everyone who collects food is pricele
 
             <img className=" rounded m-2" src={six} alt="" />
           </div>
+          
           </OwlCarousel>
         
         </section>

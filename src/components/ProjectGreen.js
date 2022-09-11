@@ -51,12 +51,9 @@ const ProjectGreen = () => {
       </div>
       <div className="container ">
         <div className="content1 m-5 text-justify px-4">
-          Mother nature defines our existence not the other way around. Our
-          ancestors preserved the environment for us that we are rigorously
-          exploiting today as if no generation will ever succeed us. Sharva
-          Foundation believes that it is the rightful duty of present
-          generations to build a sustainable environment for the next
-          generations.
+        Plant and donate trees to make your city green, gift livelihood to farmers and save the environment & wildlife. Our vision is to build a green future for our future generations, provide them with a hospitable environment, and to set them free to breathe in a clean air by saving Mother Nature and planting more trees. Not forgetting to give back to mother earth, we conduct a Plantation drive. An environment without trees is a threat to a healthy atmosphere. Through indiscriminate felling of trees, mankind has invited its own destruction.
+
+To recover the lost balance in ecology, tree plantation has no alternative. In Amuratha Bindu organization increase in the, tree plantation drive is being organized and successfully implemented.  
         </div>
         <section className="section3">
           <div className="section-img">

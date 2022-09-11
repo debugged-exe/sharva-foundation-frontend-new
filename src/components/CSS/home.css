@@ -24,23 +24,17 @@ html {
   height: 100vh;
   background-image: linear-gradient(to top, #00000042, #00000076),
     url("../images/food_donation.jpg");
-
   background-position: center;
-
   background-repeat: no-repeat;
-
   background-size: cover;
   color: white;
 }
 .carousel-item .img3 {
   height: 100vh;
   background-image: linear-gradient(to top, #0000007c, #000000d3),
-    url("../images/blood_donation.jpg");
-
+    url("../images/blooddonation/6.jpg");
   background-position: center;
-
   background-repeat: no-repeat;
-
   background-size: cover;
   color: white;
 }
@@ -48,11 +42,8 @@ html {
   height: 100vh;
   background-image: linear-gradient(to top, #0000007c, #000000d3),
     url("../images/sanitry_donation.jpg");
-
   background-position: center;
-
   background-repeat: no-repeat;
-
   background-size: cover;
   color: white;
 }
@@ -60,11 +51,8 @@ html {
   height: 100vh;
   background-image: linear-gradient(to top, #0000007c, #000000d3),
     url("../images/bacche.jpg");
-
   background-position: center;
-
   background-repeat: no-repeat;
-
   background-size: cover;
   color: white;
 }
@@ -116,13 +104,13 @@ html {
 
   border-radius: 12px;
 }
-.counter_section .heading_for_counter{
+.counter_section .heading_for_counter {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.counter_section .heading_for_counter  .line{
+.counter_section .heading_for_counter .line {
   width: 400px;
   margin: 5px;
   display: flex;
@@ -130,7 +118,6 @@ html {
   align-items: center;
   border-width: 1.2px;
   margin-bottom: 25px;
-  
 }
 .count_users {
   width: 100%;
@@ -458,16 +445,18 @@ html {
   text-align: justify;
 }
 .headings_about_us .line {
-  width: 45%;
+  width: 35%;
   margin: 5px;
+  /* padding: 0px 100px 0px 0px; */
   border-width: 1px;
   margin-bottom: 25px;
+  margin-right: 50px;
 }
 
 .headings_about_us h1 {
   width: 45%;
   text-align: center;
-  padding: 0px 25px;
+  /* padding: 0px 100px 0px 0px; */
 }
 .headings_about_us {
   display: flex;
@@ -531,13 +520,14 @@ html {
   width: 25px;
   margin: 12px;
   align-self: center;
-
 }
-.socials .youtubelogo{
+.socials .youtubelogo {
   margin: 6px;
-}.socials .facebooklogo{
+}
+.socials .facebooklogo {
   margin: 11px;
-}.socials .emaillogo{
+}
+.socials .emaillogo {
   margin: 10px;
 }
 .contact_submit_btn:hover {
@@ -546,7 +536,6 @@ html {
 .map_image {
   width: 40%;
   height: 70%;
-
 
   /* position: absolute; */
   margin: 0px 10px;
@@ -608,17 +597,17 @@ html {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
-input:-webkit-autofill:active  {
-  box-shadow:0;
+input:-webkit-autofill:active {
+  box-shadow: 0;
   -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset !important;
 }
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
-  box-shadow:0;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0;
 
-    -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset !important;
+  -webkit-box-shadow: 0 0 0 30px #f5f5f5 inset !important;
 }
 .input_box_1 {
   width: 92%;
@@ -804,12 +793,12 @@ footer .line {
   text-align: left;
 }
 .main_Feature ul {
-  margin:0px  20px 20px 20px;
+  margin: 0px 20px 20px 20px;
 
   padding: 0;
 }
 .my_account ul {
-  margin:0px  20px 20px 20px !important;
+  margin: 0px 20px 20px 20px !important;
 
   padding: 0 !important ;
 }
@@ -861,10 +850,8 @@ footer .line {
   transition: 0.3s;
 }
 .my_account ul li a {
-
-text-decoration: none;
-  color:#bdbead  !important;
-
+  text-decoration: none;
+  color: #bdbead !important;
 }
 figure {
   margin: 0px !important;
@@ -893,7 +880,7 @@ figure {
   text-decoration: none;
   color: white;
 }
-.home_join_us{
+.home_join_us {
   text-decoration: none;
   color: white;
 }
@@ -931,7 +918,7 @@ figure {
     margin: 10px;
     margin-top: 0px;
     border: 0px;
-  
+
     padding: 12px;
     background-color: #7c7b7928;
   }
@@ -968,25 +955,27 @@ figure {
     width: 100%;
     flex-direction: row;
   }
-  .gallery__image{
+  .gallery__image {
     width: 150px;
     height: 100px;
-  }  .gallery__link{
+  }
+  .gallery__link {
     width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
-  .join_us .content .gradient_btn{
+  .join_us .content .gradient_btn {
     padding: 5px !important;
   }
   .map {
     flex-direction: column;
     width: 100%;
-    }.input_box_1 {
-        flex-direction: column;
-        }
+  }
+  .input_box_1 {
+    flex-direction: column;
+  }
   /* .gallery_section_img img {
     width: 0%;
   } */
@@ -1020,7 +1009,8 @@ figure {
   }
   .contact_us_form input::placeholder {
     font-size: small;
-  }.contact_us_form textarea::placeholder {
+  }
+  .contact_us_form textarea::placeholder {
     font-size: small;
   }
   .gallery_heading h1 {
@@ -1083,7 +1073,7 @@ figure {
   .caruosel_for_merchandise {
     width: 90%;
   }
- 
+
   .join_us .content {
     width: 100vw;
   }
@@ -1135,9 +1125,8 @@ figure {
   }
   .form {
     width: 100%;
-margin: 0 !important;
+    margin: 0 !important;
     justify-content: center;
-
   }
   .image_about img {
     width: 100%;
@@ -1159,20 +1148,20 @@ margin: 0 !important;
     flex-direction: row !important;
   }
   .counter_section .heading_for_counter .line {
-    width:70%;
+    width: 70%;
     margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-width: 1.2px;
     margin-bottom: 25px;
-}
-.gradient_for_donation_card .line {
-  width: 95%;
-  margin: 5px;
-  border-width: 1px;
-  margin-bottom: 25px;
-}
+  }
+  .gradient_for_donation_card .line {
+    width: 95%;
+    margin: 5px;
+    border-width: 1px;
+    margin-bottom: 25px;
+  }
   .my_account,
   .main_Feature {
     width: 50% !important;
@@ -1210,21 +1199,19 @@ margin: 0 !important;
     text-align: center;
     font-size: small;
     padding: 0;
-    color:#bdbead  !important;
+    color: #bdbead !important;
     margin: 5px;
   }
   .credit {
     margin: 5px;
     padding: 0px !important;
     flex-direction: column !important;
-}
-.cards_image {
+  }
+  .cards_image {
+    width: 100%;
 
-  width: 100%;
-
-  justify-content: center;
-
-}
+    justify-content: center;
+  }
   .contact_us_form .button {
     display: flex;
     justify-content: center;
@@ -1258,19 +1245,18 @@ margin: 0 !important;
     text-align: center;
     font-size: 35px;
     color: #ff9100 !important;
+  }
+  .heading_contact .text-dark {
+    text-align: justify;
+    padding: 0px !important;
+  }
+  .contact-us .contact_us_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 !important;
+    margin: 10px 0px !important;
+    width: 100%;
+  }
 }
-.heading_contact .text-dark {
-  text-align: justify;
-  padding: 0px !important;
-}
-.contact-us .contact_us_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 !important;
-  margin: 10px 0px !important;
-  width: 100%;
-}
-}
-

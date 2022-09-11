@@ -2,11 +2,12 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import donation_card_1 from "./images/strivewithpride/5.jpg";
+
 import donation_card_2 from "./images/strivewithpride/5.jpg";
-import donation_card_3 from "./images/donation_card_3.jpg";
-import donation_card_4 from "./images/donation_card_4.jpg";
+
+import donation_card_4 from "./images/foodforcause/4.jpg";
 import donation_card_5 from "./images/donation_card_5.png";
+import donation_card_15 from "./images/projectruya/1.jpg";
 import donation_card_7 from "./images/donation_card_7.jpg";
 import donation_card_6 from "./images/animal.jpg";
 
@@ -163,13 +164,34 @@ const DonationCard = (props) => {
               alt="error"
             />
             <div className="card-body">
-              <h5 className="card-title text-w  hite"> Give her Wings To Fly</h5>
+              <h5 className="card-title text-white"> Give her Wings To Fly</h5>
               <p className="card-text text-white">
                 Mensturation is a biological process and females , from puberty
                 till menopause , have no control over it. With this initiative,
                 we provide thress months, six months, or a yearly stock of
                 sanitary napkins to girls who struggle to maintain mensturation
                 hygiene due to financial challenges or less awareness
+              </p>
+            </div>
+            <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
+              <button
+                type="button"
+                className="gradient_btn btn btn-sm btn-warning"
+              >
+                DONATE NOW{" "}
+              </button>
+            </a>
+          </div>
+          <div className="card bg-transparent">
+            <img
+              src={donation_card_15}
+              className="card-img-top rounded"
+              alt="error"
+            />
+            <div className="card-body">
+              <h5 className="card-title text-white">Project Ruya</h5>
+              <p className="card-text text-white">
+              Every exam season, the visually impaired students have yet another challenge to tackle besides putting in their best efforts. We help them in finding a scribe at the right time and being able to successfully complete their exams. Visually challenged students completely rely on scribes to write exams for them and most often the onus on finding a scribe falls on the students themselves. 
               </p>
             </div>
             <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
