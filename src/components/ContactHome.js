@@ -1,8 +1,6 @@
 import React,{useState} from "react";
 import hr from "./images/hr.png";
-
 import handshake from "./images/handshake.png";
-
 import group from "./images/group.png";
 import "./CSS/home.css";
 const ContactHome = () => {

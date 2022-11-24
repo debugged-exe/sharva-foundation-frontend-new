@@ -9,7 +9,7 @@ import seven from './images/foodforcause/7.jpg';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-const FoodForCause = () => {
+const VoiceForVoiceless = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
    
@@ -111,4 +111,4 @@ A thankyou smile that draws on the face of everyone who collects food is pricele
   );
 };
 
-export default FoodForCause;
+export default VoiceForVoiceless;

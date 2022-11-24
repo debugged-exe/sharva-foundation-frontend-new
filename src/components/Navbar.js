@@ -153,6 +153,15 @@ const Navbar = () => {
                     >
                       Project Ruya
                     </Link>
+                  </li><li>
+                    <Link
+                      data-toggle="collapse"
+                      data-target=".navbar-collapse.show"
+                      className="dropdown-item"
+                      to="/otheractivities"
+                    >
+                      Other Activities
+                    </Link>
                   </li>
                 
                 </ul>

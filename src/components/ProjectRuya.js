@@ -9,7 +9,7 @@ import four from './images/projectruya/4.jpg';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-const FoodForCause = () => {
+const ProjectRuya = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
    
@@ -105,4 +105,4 @@ Our visually impaired brethren are no less capable to perform like the rest of u
   );
 };
 
-export default FoodForCause;
+export default ProjectRuya;

@@ -74,11 +74,7 @@ const Count = () => {
                             >
                               {({ isVisible }) => (
                                 <div className="mx-2 ">
-                                  {isVisible ? (
-                                    <CountUp end={e.count} />
-                                  ) : (
-                                    94.8
-                                  )}
+                                  {<CountUp end={e.count} />}
                                 </div>
                               )}
                             </VisibilitySensor>

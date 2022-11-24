@@ -2,9 +2,7 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
 import donation_card_2 from "./images/strivewithpride/5.jpg";
-
 import donation_card_4 from "./images/foodforcause/4.jpg";
 import donation_card_5 from "./images/donation_card_5.png";
 import donation_card_15 from "./images/projectruya/1.jpg";
@@ -191,7 +189,13 @@ const DonationCard = (props) => {
             <div className="card-body">
               <h5 className="card-title text-white">Project Ruya</h5>
               <p className="card-text text-white">
-              Every exam season, the visually impaired students have yet another challenge to tackle besides putting in their best efforts. We help them in finding a scribe at the right time and being able to successfully complete their exams. Visually challenged students completely rely on scribes to write exams for them and most often the onus on finding a scribe falls on the students themselves. 
+                Every exam season, the visually impaired students have yet
+                another challenge to tackle besides putting in their best
+                efforts. We help them in finding a scribe at the right time and
+                being able to successfully complete their exams. Visually
+                challenged students completely rely on scribes to write exams
+                for them and most often the onus on finding a scribe falls on
+                the students themselves.
               </p>
             </div>
             <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
@@ -212,7 +216,12 @@ const DonationCard = (props) => {
             <div className="card-body">
               <h5 className="card-title text-white">Voice For Voiceless</h5>
               <p className="card-text text-white">
-              A Campaign where we distributed reflective bands to the ones in need and the main cause for this drive was to prevent fatal accidents. In addition to that, food and good quality shelter was provided for stray animals who don't have someone of their own. Funds were raised for several NGOs so that the voiceless can speak with their emotions.
+                A Campaign where we distributed reflective bands to the ones in
+                need and the main cause for this drive was to prevent fatal
+                accidents. In addition to that, food and good quality shelter
+                was provided for stray animals who don't have someone of their
+                own. Funds were raised for several NGOs so that the voiceless
+                can speak with their emotions.
               </p>
             </div>
             <a className="nav-link  " href="https://rzp.io/l/oQlaIFYe">
@@ -225,122 +234,7 @@ const DonationCard = (props) => {
             </a>
           </div>
         </OwlCarousel>
-        {/* <div className="text-white carousel about_donation">
-          <Carousel
-            responsive={responsive}
-            swipeable={true}
-            
-            draggable={false}
-            showDots={true}
-            ssr={true} // means to render carousel on server-side.
-            infinite={true}
-            autoPlay={props.deviceType !== "mobile" ? true : false}
-            autoPlaySpeed={5000}
-   
-            // customTransition="all .5"
-            transitionDuration={4000}
-            containerclassName="carousel-container"
-            removeArrowOnDeviceType={["tablet", "mobile"]}
-            deviceType={props.deviceType}
-            dotListclassName="custom-dot-list-style"
-            itemclassName="carousel-item-padding-40-px"
-          >
-            <div className="card bg-transparent">
-              <img
-                src={donation_card_1}
-                className="card-img-top rounded"
-               alt="error"
-              />
-              <div className="card-body">
-                <h5 className="card-title text-white"> rupees 1 campaign</h5>
-                <p className="card-text text-white">
-                  have you ever heard of the proverb "little drops make the
-                  mighty ocean"? we believe that if evn only one rupee
-                  contribution is made by a large mass , it can help us to
-                  proactively offer help for any caouse or tragedies due to an
-                  uncalled situation
-                </p>
-              </div>
-              <button className="rounded gradient_btn  btn button text-white">DONATE NOW</button>
-            </div>
-            <div className="card bg-transparent">
-              <img
-                src={donation_card_2}
-                className="card-img-top rounded"
-               alt="error"
-              />
-              <div className="card-body">
-                <h5 className="card-title text-white"> Strive With Pride</h5>
-                <p className="card-text text-white">
-                  our intiatives helps the transgender community with basic
-                  necessities. Sharva Foundation's aim is not to provide only
-                  tangible items but to encourage society as a whole to be
-                  inclusive of transgenders, who are ofter excluded from the
-                  social landscape
-                </p>
-              </div>
-              <button className="rounded gradient_btn  btn button text-white">DONATE NOW</button>
-            </div>
-            <div className="card bg-transparent">
-              <img
-                src={donation_card_3}
-                className="card-img-top rounded"
-               alt="error"
-              />
-              <div className="card-body">
-                <h5 className="card-title text-white"> As Free As a Bird</h5>
-                <p className="card-text text-white">
-                  Mensturation is a biological process and females , from
-                  puberty till menopause , have no control over it. With this
-                  initiative, we provide thress months, six months, or a yearly
-                  stock of sanitary napkins to girls who struggle to maintain
-                  mensturation hygiene due to financial challenges or less
-                  awareness
-                </p>
-              </div>
-              <button className="rounded gradient_btn  btn button text-white">DONATE NOW</button>
-            </div>
-            <div className="card bg-transparent">
-              <img
-                src={donation_card_4}
-                className="card-img-top rounded"
-               alt="error"
-              />
-              <div className="card-body">
-                <h5 className="card-title text-white"> Food For Cause</h5>
-                <p className="card-text text-white">
-                  Food is teh most basic necessity and still, a large population
-                  sleeps hungry and wakes up malnutrition. Since the inception
-                  of this campaign, our voluenteers have completed 100+ food
-                  drives where we served cooded and packed meals to the needy.
-                </p>
-              </div>
-              <button className="rounded gradient_btn  btn button text-white">DONATE NOW</button>
-            </div>
-            <div className="card bg-transparent">
-              <img
-                src={donation_card_5}
-                className="card-img-top rounded"
-               alt="error"
-              />
-              <div className="card-body">
-                <h5 className="card-title text-white">
-                  {" "}
-                  Give her Winfs To Fly
-                </h5>
-                <p className="card-text text-white">
-                  Mensturation is a biological process and females , from
-                  puberty till menopause , have no control over it. With this
-                  initiative, we provide thress months, six months, or a yearly
-                  stock of sanitary napkins to girls who struggle to maintain
-                  mensturation hygiene due to financial challenges or less
-                  awareness
-                </p>
-              </div>
-              <button className="rounded gradient_btn  btn button text-white">DONATE NOW</button>
-            </div>
-          </Carousel>
-        </div> */}
+        
       </div>
     </div>
   );
