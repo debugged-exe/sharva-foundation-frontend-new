@@ -14,7 +14,7 @@ const CountCard = (props) => {
               <VisibilitySensor partialVisibility offset={{ bottom: 200 }}>
                 {({ isVisible }) => (
                   <div className="mx-2 ">
-                    {isVisible ? <CountUp end={props.count} /> : 0}
+                    {isVisible ? <CountUp end={props.count} /> : 1}
                   </div>
                 )}
               </VisibilitySensor>
