@@ -44,7 +44,7 @@ class Join extends React.PureComponent {
       category,
       whyjoin,
     } = this.state;
-    var URI = "https://sharva-backend.herokuapp.com/";
+    var URI = "https://backend-for-sharvafoundation-new.vercel.app/";
     event.preventDefault();
     fetch(`${URI}join`, {
       method: "post",

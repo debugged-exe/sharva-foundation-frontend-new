@@ -17,7 +17,7 @@ const Count = () => {
   const usercount = async () => {
     try {
       const res = await fetch(
-        "https://sharva-backend.herokuapp.com/fetch_counts",
+        "https://backend-for-sharvafoundation-new.vercel.app/",
         {
           method: "GET",
           headers: {
