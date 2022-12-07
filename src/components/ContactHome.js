@@ -22,7 +22,7 @@ const ContactHome = () => {
 
 
   
-  const URL = 'https://backend-for-sharvafoundation-new.vercel.app/'
+  const URL = 'https://sharva-backend-new.vercel.app/'
 
   const feedbackform = async (e) => {
     e.preventDefault();

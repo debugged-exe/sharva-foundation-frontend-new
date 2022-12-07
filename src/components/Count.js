@@ -17,7 +17,7 @@ const Count = () => {
   const usercount = async () => {
     try {
       const res = await fetch(
-        "https://backend-for-sharvafoundation-new.vercel.app/",
+        "https://sharva-backend-new.vercel.app/fetch_counts",
         {
           method: "GET",
           headers: {
